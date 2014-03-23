@@ -1,0 +1,84 @@
+@import url('bootstrap.min.css');
+
+.savegame-outer {
+	float: left;
+	margin: 0;
+}
+
+.savegame {
+	background-color: white;
+	box-sizing: content-box;
+	height: 128px;
+	margin: 9px;
+	position: relative;
+	display: block;
+	padding: 4px;
+	line-height: 1;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	
+	transition: -webkit-box-shadow 0.5s;
+	transition: border 0.5s;
+}
+
+.savegame:hover {
+	border-color: #08C;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 1px 4px rgba(0,105,214,0.25);
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.savegame .caption {
+	padding: 2px 0 0 0;
+}
+
+.savegame .caption .comments, .savegame .caption .author {
+	font-size: 10px;
+}
+
+.savegame .caption .comments {
+	float: right;
+}
+
+.savegame .caption .author {
+	float: left;
+}
+
+.savegame .caption::after {
+	clear: both;
+}
+
+.savegame .caption::after, .savegame .caption::before {
+	display: table;
+	content: "";
+}
+
+.savegame .overlay {
+	position: absolute;
+	width: 153px;
+	height: 96px;
+	padding: 3px 3px 0 3px;
+}
+
+.savegame .overlay input.btn {
+	margin-bottom: 3px; 
+	display: block;
+	width: 147px;
+}
+
+.savegame .overlay a.btn {
+	margin-bottom: 3px; 
+	display: block;
+	width: 125px;
+}
+
+.savegame form {
+	margin: 0;
+}
+
+
