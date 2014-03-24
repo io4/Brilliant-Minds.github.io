@@ -37,3 +37,13 @@ body {
 .sub-lead {
     margin-top: -15px;
 }
+
+/* Centered subheadings */
+.subheadings .span6 {
+    text-align: center;
+}
+
+.subheadings .span6 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
