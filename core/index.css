@@ -20,6 +20,9 @@ table.index{
 	background:rgb(235, 245, 255);
 	color:gold;
 }
+th{
+	text-align:center;
+}
 a{
 	color:gold;
 	text-decoration:none;
