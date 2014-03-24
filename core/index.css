@@ -1,0 +1,30 @@
+body{
+	text-align:center;
+	background:rgb(235, 245, 255);
+	font-family:"Courier New", Courier, monospace;
+}
+table{
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+}
+table.index{
+	border:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+.index th,.index td{
+	padding:1px 4px;
+}
+.index tbody tr:hover{
+	background:rgb(235, 245, 255);
+	color:gold;
+}
+a{
+	color:gold;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+
