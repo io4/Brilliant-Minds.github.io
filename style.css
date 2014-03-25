@@ -53,3 +53,11 @@ body {
     text-align: left;
     padding-left: 20px;
 }
+
+/* Hub jumbotron stuff */
+#hub-logo {
+    float: right;
+}
+#hub-jumbotron-text {
+    text-align: left;
+}
