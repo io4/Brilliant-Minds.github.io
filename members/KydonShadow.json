@@ -1,0 +1,20 @@
+{
+    "awards": {
+        "Recruiting": 5,
+        "Front Page": 5,
+        "Leadership": 1,
+        "Commanding Officer": 1,
+        "Executive Officer": 1,
+        "Admirals Counsel": 1,
+        "Project Manager": 4,
+        "Technical": 1,
+        "Electrician": 1,
+        "Weapons Specialist": 1,
+        "Colonist": 1,
+        "Offworld Governor": 5,
+        "BMN": 2
+    },
+
+    "rank": "Fleet Admiral",
+    "rank_comment": "Head of Admiral's Counsel" 
+}
