@@ -1,4 +1,4 @@
 {
-    "Officers": ["KydonShadow"],
-    "Preofficers": ["xetalim"]
+    "officers": [["KydonShadow", "Fleet Admiral"]],
+    "preofficers": [["xetalim", "Upper Recruit"]]
 }
