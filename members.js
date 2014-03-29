@@ -18,15 +18,15 @@ function createAwardBadge(name, rank) {
     var cl = "";
     var rn = "";
     switch (rank) {
-        case 0:
-            cl = "badge-inverse"; rn = "Standard rank"; break;
         case 1:
-            cl = "badge-bronze"; rn = "Bronze rank"; break;
+            cl = "badge-inverse"; rn = "Standard rank"; break;
         case 2:
-            cl = "badge-silver"; rn = "Silver rank"; break;
+            cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:
-            cl = "badge-warning"; rn = "Gold rank"; break;
+            cl = "badge-silver"; rn = "Silver rank"; break;
         case 4:
+            cl = "badge-warning"; rn = "Gold rank"; break;
+        case 5:
             cl = "badge-diamond"; rn = "Diamond rank"; break;
     }
     return $("<span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span><span> </span>");
