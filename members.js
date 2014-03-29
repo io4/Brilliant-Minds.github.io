@@ -34,8 +34,12 @@ function createAwardBadge(name, rank) {
 
 function createList() {
     var resp = jQuery.getJSON("members.json");
+    // Set content to be fluid
+    $("#content").addClass("row-fluid");
+
     resp.done(function(e) {
-        $("<h4>Officers</h4>").appendTo("#content");
+        var offbox = $("<div class=\"span6\"></div>");
+        $("<h4>Officers</h4>").appendTo(offbox);
         var officers = $("<ul></ul>")
         for (var i = 0; i < e.officers.length; i++) {
             var li = $("<li></li>");
@@ -44,9 +48,11 @@ function createList() {
             createRankBadge(e.officers[i][1]).appendTo(li);
             li.appendTo(officers);
         }
-        officers.appendTo("#content");
+        officers.appendTo(offbox);
+        offbox.appendTo("#content");
 
-        $("<h4>Preofficers</h4>").appendTo("#content");
+        var preoffbox = $("<div class=\"span6\"></div>");
+        $("<h4>Preofficers</h4>").appendTo(preoffbox);
         var preofficers = $("<ul></ul>")
         for (var i = 0; i < e.preofficers.length; i++) {
             var li = $("<li></li>");
@@ -55,7 +61,8 @@ function createList() {
             createRankBadge(e.preofficers[i][1]).appendTo(li);
             li.appendTo(preofficers);
         }
-        preofficers.appendTo("#content");
+        preofficers.appendTo(preoffbox);
+        preoffbox.appendTo("#content");
     });
 }
 
