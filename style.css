@@ -67,8 +67,9 @@ body {
     float: right;
     text-align: right;
 
+    min-width: 100px;
     max-width: 250px;
-    min-height: 50px;
+    min-height: 20px;
 
     padding: 5px;
     margin-top: -50px;
