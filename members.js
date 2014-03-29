@@ -16,6 +16,8 @@ function createRankBadge(rank) {
         cl = "badge-bronze";
     else if (rank.indexOf("Lieutenant") != -1 || rank.indexOf("Ensign") != -1)
         cl = "badge-inverse";
+    else if (rank.indexOf("Candidate") != -1)
+        cl = "badge-success";
     else
         cl = "badge-default";
 
@@ -48,7 +50,7 @@ function createList() {
     resp.done(function(e) {
         var offbox = $("<div class=\"span6\"></div>");
         $("<h4>Officers</h4>").appendTo(offbox);
-        var officers = $("<ul></ul>")
+        var officers = $("<ul></ul>");
         for (var i = 0; i < e.officers.length; i++) {
             var li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.officers[i][0]) + "\">" +
@@ -83,10 +85,16 @@ function createRecord(name) {
         title.prependTo("#content");
         $("<i>" + e.rank_comment + "</i>").appendTo("#content");
 
+        // Put awards into a table and sort it by rank
+        sortable = [];
+        for (var i in e.awards)
+            sortable.push([i, e.awards[i]]);
+        sortable.sort(function(a, b) {return b[1] - a[1]});
+
         // Award box
         var box = $("<div class=\"award-box\"></div>");
-        for (var i in e.awards) {
-            createAwardBadge(i, e.awards[i]).appendTo(box);
+        for (var i = 0; i < sortable.length; i++) {
+            createAwardBadge(sortable[i][0], sortable[i][1]).appendTo(box);
         }
         box.appendTo("#content");
 
