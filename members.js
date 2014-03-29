@@ -99,7 +99,7 @@ function createRecord(name) {
         box.appendTo("#content");
 
         // Links
-        $("<br><a class=\"muted\" href=\"http://tpt.io/@" + name + "\">Forum Profile</a>").appendTo("#content");
+        $("<br><a class=\"muted\" href=\"http://powdertoy.co.uk/User.html?Name=" + encodeURIComponent(name) + "\">Forum Profile</a>").appendTo("#content");
         for (var i in e.links) {
             $("<span class=\"muted\">&nbsp;&middot;&nbsp;</span><a class=\"muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
         }
