@@ -65,22 +65,7 @@ body {
 /* Award/Badge box at member records */
 .award-box {
     text-align: right;
-
-    min-width: 100px;
-    max-width: 250px;
-    min-height: 20px;
-
-    padding: 5px;
-    margin-top: -50px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-}
-
-/* Maybe this will help */
-@media (max-width: 967px) {
-    #award-box {
-        float: none;
-    }
+    padding-top: 10px;
 }
 
 /* Some additional badge colors and style */

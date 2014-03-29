@@ -92,7 +92,7 @@ function createRecord(name) {
         sortable.sort(function(a, b) {return b[1] - a[1]});
 
         // Award box
-        var box = $("<div class=\"award-box pull-right\"></div>");
+        var box = $("<div class=\"award-box\"></div>");
         for (var i = 0; i < sortable.length; i++) {
             createAwardBadge(sortable[i][0], sortable[i][1]).appendTo(box);
         }
