@@ -73,6 +73,14 @@ body {
     padding: 5px;
     margin-top: -50px;
     margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+/* Maybe this will help */
+@media (max-width: 967px) {
+    #award-box {
+        float: none;
+    }
 }
 
 /* Some additional badge colors and style */
