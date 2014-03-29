@@ -10,12 +10,26 @@ function createRankBadge(rank) {
     // TODO: Add more colors
     var cl = "";
     if (rank.indexOf("Admiral") != -1)
-        cl = " badge-warning";
-    return $("<span class=\"badge" + cl + "\">" + rank + "</span>");
+        cl = "badge-warning";
+    return $("<span class=\"badge " + cl + "\">" + rank + "</span>");
 }
 
 function createAwardBadge(name, rank) {
-    return $("<span class=\"badge\">" + name + "</span><span> </span>");
+    var cl = "";
+    var rn = "";
+    switch (rank) {
+        case 0:
+            cl = "badge-inverse"; rn = "Standard rank"; break;
+        case 1:
+            cl = "badge-bronze"; rn = "Bronze rank"; break;
+        case 2:
+            cl = "badge-silver"; rn = "Silver rank"; break;
+        case 3:
+            cl = "badge-warning"; rn = "Gold rank"; break;
+        case 4:
+            cl = "badge-diamond"; rn = "Diamond rank"; break;
+    }
+    return $("<span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span><span> </span>");
 }
 
 function createList() {
@@ -66,6 +80,9 @@ function createRecord(name) {
         for (var i in e.links) {
             $("<span class=\"muted\">&nbsp;&middot;&nbsp;</span><a class=\"muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
         }
+
+        // Aaand add the page
+        $("<div class=\"member-page\">" + e.page + "</div>").appendTo("#content")
 
         // Prepend the back link
         $("<a href=\"members.html\">< Back</a><br>").prependTo("#content");

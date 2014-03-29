@@ -77,3 +77,19 @@ body {
     border: 1px solid #EEE;
     border-radius: 5px;
 }
+
+/* Some additional badge colors and style */
+.badge {
+    cursor: default;
+}
+.badge-bronze {
+    background-color: #BD6F2D;
+}
+.badge-silver {
+    background-color: #B7BDBD;
+}
+.badge-diamond {
+    background-color: #E0FFFF;
+    color: #557;
+    border: 1px solid #AAA;
+}
