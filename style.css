@@ -64,7 +64,6 @@ body {
 
 /* Award/Badge box at member records */
 .award-box {
-    float: right;
     text-align: right;
 
     min-width: 100px;
