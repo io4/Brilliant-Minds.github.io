@@ -7,10 +7,18 @@ function load() {
 }
 
 function createRankBadge(rank) {
-    // TODO: Add more colors
     var cl = "";
     if (rank.indexOf("Admiral") != -1)
         cl = "badge-warning";
+    else if (rank.indexOf("Captain") != -1)
+        cl = "badge-silver";
+    else if (rank.indexOf("Commander") != -1)
+        cl = "badge-bronze";
+    else if (rank.indexOf("Lieutenant") != -1 || rank.indexOf("Ensign") != -1)
+        cl = "badge-inverse";
+    else
+        cl = "badge-default";
+
     return $("<span class=\"badge " + cl + "\">" + rank + "</span>");
 }
 
