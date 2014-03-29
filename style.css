@@ -67,11 +67,11 @@ body {
     float: right;
     text-align: right;
 
-    min-width: 100px;
-    max-width: 50%;
-    min-height: 10px;
+    max-width: 250px;
+    min-height: 50px;
+
     padding: 5px;
-    margin-top: -40px;
+    margin-top: -50px;
     margin-bottom: 5px;
 
     border: 1px solid #EEE;
@@ -92,4 +92,10 @@ body {
     background-color: #E0FFFF;
     color: #557;
     border: 1px solid #AAA;
+}
+
+/* If this seems weird, it is */
+#content {
+    clear: both;
+    overflow: hidden;
 }
