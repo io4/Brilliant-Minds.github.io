@@ -22,13 +22,15 @@
     		["shadowninja16", "Ensign"],
     		["NUCLEAR_FOX", "Ensign"]],
     "preofficers": [["Amy", "Officer Candidate"],
-                   ["xetalim", "Upper Recruit"],
-                   ["Gary55", "Upper Recruit"],
-                   ["cracker1000", "Lower Recruit"],
-                   ["wardwi", "Lower Recruit"],
-                   ["powder_generator", "Lower Recruit"],
-                   ["MiningMarsh", "Lower Recruit"],
-                   ["akronmantpt", "Lower Recruit"],
-                   ["aryaj", "Lower Recruit"]]
+        ["xetalim", "Upper Recruit"],
+        ["Gary55", "Upper Recruit"],
+        ["cracker1000", "Lower Recruit"],
+        ["wardwi", "Lower Recruit"],
+        ["powder_generator", "Lower Recruit"],
+        ["MiningMarsh", "Lower Recruit"],
+        ["akronmantpt", "Lower Recruit"],
+        ["aryaj", "Lower Recruit"]],
+    "resigned": ["billion57", "PowderTech1350"],
+    "banned": ["CatAnimation"]
 }
 

@@ -72,6 +72,28 @@ function createList() {
             li.appendTo(preofficers);
         }
         preofficers.appendTo(preoffbox);
+
+        // I'll just add the resigned and banned members here for now
+        $("<h4>Resigned</h4>").appendTo(preoffbox);
+        var resigned = $("<ul></ul>");
+        for (var i = 0; i < e.resigned.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.resigned[i]) + "\">" +
+                e.resigned[i] + "</a><span> </span>").appendTo(li);
+            li.appendTo(resigned);
+        }
+        resigned.appendTo(preoffbox);
+
+        $("<h4>Banned</h4>").appendTo(preoffbox);
+        var banned = $("<ul></ul>");
+        for (var i = 0; i < e.banned.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.banned[i]) + "\">" +
+                e.banned[i] + "</a><span> </span>").appendTo(li);
+            li.appendTo(banned);
+        }
+        banned.appendTo(preoffbox);
+
         preoffbox.appendTo("#content");
     });
 }
@@ -114,8 +136,8 @@ function createRecord(name) {
     resp.error(function(e) {
         // Prepend an error message
         $("<a href=\"members.html\">< Back</a>").prependTo("#content");
-        $("<div class=\"alert alert-error\">Could find no member named \""
-            + name + "\" :(</div>").appendTo("#content");
+        $("<div class=\"alert alert-error\">Could find no member page for "
+            + name + " :(</div>").appendTo("#content");
     });
 }
 
