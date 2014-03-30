@@ -21,7 +21,7 @@ function createRankBadge(rank) {
     else
         cl = "badge-default";
 
-    return $("<span class=\"badge " + cl + "\">" + rank + "</span>");
+    return $("<span class=\"label " + cl + "\">" + rank + "</span>");
 }
 
 function createAwardBadge(name, rank) {
