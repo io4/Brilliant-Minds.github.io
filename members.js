@@ -28,8 +28,10 @@ function createAwardBadge(name, rank) {
     var cl = "";
     var rn = "";
     switch (rank) {
+        case 0:
+            cl = "badge-inverse"; rn = "Badge"; break;
         case 1:
-            cl = "badge-inverse"; rn = "Standard rank"; break;
+            cl = "badge-default"; rn = "Standard rank"; break;
         case 2:
             cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:
