@@ -1,10 +1,10 @@
 ﻿{
     "awards": {
-        "Admirals Counsel": 1,
-        "Leadership": 1,
-        "Executive Officer": 1,
+        "Admirals Counsel": 0,
+        "Leadership": 0,
+        "Executive Officer": 0,
         "Recruiting": 1,
-        "Commanding Officer": 1
+        "Commanding Officer": 0
     },
 
     "rank": "Admiral",

@@ -2,17 +2,17 @@
     "awards": {
         "Recruiting": 5,
         "Front Page": 5,
-        "Leadership": 1,
-        "Commanding Officer": 1,
-        "Executive Officer": 1,
-        "Admirals Counsel": 1,
+        "Leadership": 0,
+        "Commanding Officer": 0,
+        "Executive Officer": 0,
+        "Admirals Counsel": 0,
         "Project Manager": 4,
-        "Technical": 1,
-        "Electrician": 1,
-        "Weapons Specialist": 1,
-        "Colonist": 1,
+        "Technical": 0,
+        "Electrician": 0,
+        "Weapons Specialist": 0,
+        "Colonist": 0,
         "Offworld Governor": 5,
-        "BMN": 2
+        "BMN": 5
     },
 
     "rank": "Fleet Admiral",
