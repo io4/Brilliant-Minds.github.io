@@ -138,7 +138,7 @@ function createRecord(name) {
     resp.error(function(e) {
         // Prepend an error message
         $("<a href=\"members.html\">< Back</a>").prependTo("#content");
-        $("<div class=\"alert alert-error\">Sorry, I Couldn't find a member page for "
+        $("<div class=\"alert alert-error\">Sorry, I couldn't find a member page for "
             + name + " :(</div>").appendTo("#content");
     });
 }
