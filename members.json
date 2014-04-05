@@ -1,4 +1,5 @@
-﻿{
+﻿
+{
     "officers": [["KydonShadow", "Fleet Admiral"],
     		["lefouduroi", "Admiral"],
     		["Cacophony", "Admiral"],
@@ -17,12 +18,12 @@
     		["fireball5000", "Lieutenant Commander"],
     		["ShadowPlasma", "Lieutenant"],
     		["h4zardz1", "Lieutenant"],
+			["Amy", "Lieutenant"],
     		["HMMurdock", "Lieutenant JG"],
     		["Box-Poorsoft", "Lieutenant JG"],
     		["shadowninja16", "Ensign"],
     		["NUCLEAR_FOX", "Ensign"]],
-    "preofficers": [["Amy", "Officer Candidate"],
-        ["xetalim", "Upper Recruit"],
+    "preofficers": [["xetalim", "Upper Recruit"],
         ["Gary55", "Upper Recruit"],
         ["cracker1000", "Lower Recruit"],
         ["wardwi", "Lower Recruit"],
@@ -33,4 +34,5 @@
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
     "banned": ["CatAnimation"]
 }
+
 
