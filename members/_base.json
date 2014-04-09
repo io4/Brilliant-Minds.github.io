@@ -1,10 +1,31 @@
 ﻿{
     "awards": {},
+    // Example: "awards": {"Leadership": 0,
+    //                     "Project Manager": 4}
+    // The numbers are the following:
+    // 0: The award is a badge
+    // 1: Standard rank
+    // 2: Bronze rank
+    // 3: Silver rank
+    // 4: Gold rank
+    // 5: Diamond rank
 
     "rank": "To be defined",
     "rank_comment": "",
+    // These can be anything.
+    // ==> Remember to change this inside member.json too!
+
+    "voucher": false, // Change to true when the member has a voucher
+    "safe": 0, // Safe status. 0 = Not safe, 1 = Safe, 2 = Autosafe
 
     "links": {},
+    // These links are displayed beneath the "Forum Profile" link.
+    // Example: "links": {"Website": "http://asdf.com",
+    //                    "Facebook": "http://facebook.com/asdf"}
 
     "page": "There were no record created for this member yet."
+    // And this is the main part. It's normal HTML and will be inserted into the
+    // page directly.
+    // ==> Remember that a normal newline here would break the JSON file, use
+    //     <br> instead.
 }
