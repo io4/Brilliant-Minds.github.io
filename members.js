@@ -96,6 +96,9 @@ function createList() {
         }
         banned.appendTo(preoffbox);
 
+        // Add the date of the last update
+        $("<small class=\"muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
+
         preoffbox.appendTo("#content");
     });
 }
@@ -129,7 +132,25 @@ function createRecord(name) {
         }
 
         // Aaand add the page
-        $("<div class=\"member-page\">" + e.page + "</div>").appendTo("#content")
+        $("<div class=\"member-page\">" + e.page + "</div>").appendTo("#content");
+
+        // Oh, and don't forget the voucher and safe status
+        var status = "(";
+        if (e.voucher) {
+            status += "This member has a voucher";
+
+            if (e.safe == 1)
+                status += " and is safe for the next IMC/IRC";
+            else if (e.safe == 2)
+                status += " and is autosafe";
+        }
+        else {
+            if (e.safe == 1)
+                status += "This member is safe for the next IMC/IRC";
+            else if (e.safe == 2)
+                status += "This member is absolutely necessary to keep the group going and thus is autosafe";
+        }
+        $("<small class=\"muted\">" + status + ")</small>").appendTo("#content");
 
         // Prepend the back link
         $("<a href=\"members.html\">< Back</a><br>").prependTo("#content");

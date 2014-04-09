@@ -7,6 +7,9 @@
     "rank": "Admiral",
     "rank_comment": "Admirals Counsel",
 
+    "voucher": false,
+    "safe": 1,
+
     "links": {},
 
     "page": "A good leader, though at times can <i>appear</i> to be a bit cynical."

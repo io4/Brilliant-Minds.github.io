@@ -7,6 +7,9 @@
     "rank": "Vice Admiral",
     "rank_comment": "Admirals Counsel",
 
+    "voucher": true,
+    "safe": 0,
+
     "links": {},
 
     "page": "First Vice Admiral."
