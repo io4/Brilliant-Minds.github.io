@@ -135,9 +135,9 @@ function createRecord(name) {
         $("<div class=\"member-page\">" + e.page + "</div>").appendTo("#content");
 
         // Oh, and don't forget the voucher and safe status
-        var status = "(";
+        var status = "";
         if (e.voucher) {
-            status += "This member has a voucher";
+            status += "(This member has a voucher";
 
             if (e.safe == 1)
                 status += " and is safe for the next IMC/IRC";
@@ -146,11 +146,12 @@ function createRecord(name) {
         }
         else {
             if (e.safe == 1)
-                status += "This member is safe for the next IMC/IRC";
+                status += "(This member is safe for the next IMC/IRC";
             else if (e.safe == 2)
-                status += "This member is absolutely necessary to keep the group going and thus is autosafe";
+                status += "(This member is absolutely necessary to keep the group going and thus is autosafe";
         }
-        $("<small class=\"muted\">" + status + ")</small>").appendTo("#content");
+        if (status != "")
+            $("<small class=\"muted\">" + status + ")</small>").appendTo("#content");
 
         // Prepend the back link
         $("<a href=\"members.html\">< Back</a><br>").prependTo("#content");
