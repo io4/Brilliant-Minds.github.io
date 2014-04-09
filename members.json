@@ -1,5 +1,5 @@
-﻿
-{
+﻿{
+    "updated": "2014-04-09",
     "officers": [["KydonShadow", "Fleet Admiral"],
     		["lefouduroi", "Admiral"],
     		["Cacophony", "Admiral"],
@@ -23,14 +23,16 @@
     		["Box-Poorsoft", "Lieutenant JG"],
     		["shadowninja16", "Ensign"],
     		["NUCLEAR_FOX", "Ensign"]],
-    "preofficers": [["xetalim", "Upper Recruit"],
+    "preofficers": [["aryaj", "Lower Recruit"],
+        ["xetalim", "Upper Recruit"],
+        ["C_D_Pro", "Upper Recruit"],
         ["Gary55", "Upper Recruit"],
         ["cracker1000", "Lower Recruit"],
         ["wardwi", "Lower Recruit"],
         ["powder_generator", "Lower Recruit"],
         ["MiningMarsh", "Lower Recruit"],
         ["akronmantpt", "Lower Recruit"],
-        ["aryaj", "Lower Recruit"]],
+        ["TPT_Creator", "Lower Recruit"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
     "banned": ["CatAnimation"]
 }
