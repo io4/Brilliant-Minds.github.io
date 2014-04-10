@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>BMN &middot; TPT Mod</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png" />
@@ -23,6 +24,16 @@
     <!-- CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+	
+	<!-- Compatibility layer for ie -->
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 7]>
+    <link href="bootstrap-ie7.min.css" />
+    <![endif]-->
 </head>
 <body>
   <div class="container-narrow">
@@ -71,7 +82,8 @@
         <p>wolfy1339, nucular</p>
       </div>
       <div class="col-sm-6 col-md-6">
-        <h4>TravisCI</h4>
+        <img src="img/travis.png">
+		<h4>TravisCI</h4>
         <p>This mod uses TravisCI to make sure that everything is compilable.</p>
         <h4>Subheading 5</h4>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
