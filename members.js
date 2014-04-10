@@ -47,7 +47,7 @@ function createAwardBadge(name, rank) {
 function createList() {
     var resp = jQuery.getJSON("members.json");
     // Set content to be fluid
-    $("#content").addClass("row-fluid");
+    $("#content").addClass("row");
 
     resp.done(function(e) {
         var offbox = $("<div class=\"span6\"></div>");
