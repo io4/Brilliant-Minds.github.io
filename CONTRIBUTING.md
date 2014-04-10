@@ -1,5 +1,6 @@
 ISSUE REPORTING:
-Please report only one bug, suggestion or pull request per issue,
+---------------
+**Please report only one bug, suggestion or pull request per issue,**
 
 BUGREPORT:
 Please answer the questions below when you want to report a bug. A bug could
@@ -15,6 +16,7 @@ What happened?
 **Please include a screenshot of the page and any error messages you may have gotten**
 
 PULL REQUESTS:
+-------------
 We are open to accept pull request from users.
 In your pull request please include:
 What you changed?
