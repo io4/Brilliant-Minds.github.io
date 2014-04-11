@@ -1,8 +1,9 @@
-
 {
-	"divisions": [["BMN Security Division", "BMNSD"],
-			  ["BMN Technical Division" "BMNTD"]],
-	"": [["",
+	"BMN Security Division": [["lefouduroi", "Admiral"],
+			  ["nijalninja98" "Rear Admiral"]],
+	"BMN Technical Division": [["wolfy1339", "Rear Admiral"],
+			  ["nucular", "Lieutennat Commander"]],
+	"BMN Space Division": [["OC39648", "Rear Admiral"]]
 }
 
 
