@@ -50,7 +50,7 @@ function createList() {
     $("#content").addClass("row");
 
     resp.done(function(e) {
-        var offbox = $("<div class=\"span6\"></div>");
+        var offbox = $("<div class=\"row span6\"></div>");
         $("<h4>Officers</h4>").appendTo(offbox);
         var officers = $("<ul></ul>");
         for (var i = 0; i < e.officers.length; i++) {
@@ -63,7 +63,7 @@ function createList() {
         officers.appendTo(offbox);
         offbox.appendTo("#content");
 
-        var preoffbox = $("<div class=\"span6\"></div>");
+        var preoffbox = $("<div class=\"row span6\"></div>");
         $("<h4>Preofficers</h4>").appendTo(preoffbox);
         var preofficers = $("<ul></ul>")
         for (var i = 0; i < e.preofficers.length; i++) {

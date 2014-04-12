@@ -77,6 +77,7 @@
     color: #446;
     border: 1px solid #AAA;
 }
+.badge-inverse {	background-color: #333;}
 /* If this seems weird, it is */
 #content {
     clear: both;
