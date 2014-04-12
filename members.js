@@ -19,9 +19,9 @@ function createRankBadge(rank) {
     else if (rank.indexOf("Candidate") != -1)
         cl = "badge-success";
     else
-        cl = "badge-default";
+        cl = "badge";
 
-    return $("<span class=\"label " + cl + "\">" + rank + "</span>");
+    return $("<span class=\"badge " + cl + "\">" + rank + "</span>");
 }
 
 function createAwardBadge(name, rank) {
@@ -31,7 +31,7 @@ function createAwardBadge(name, rank) {
         case 0:
             cl = "badge-inverse"; rn = "Badge"; break;
         case 1:
-            cl = "badge-default"; rn = "Standard rank"; break;
+            cl = "badge"; rn = "Standard rank"; break;
         case 2:
             cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:

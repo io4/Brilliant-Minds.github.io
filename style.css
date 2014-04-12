@@ -2,9 +2,7 @@
     padding-top: 20px;
     padding-bottom: 40px;
 }
-@media (min-width: 668px) {
-  .container {max-width: 730px;}
-}
+@media (min-width: 668px) {.container {max-width: 730px;}}
 .container-narrow > hr {
   margin: 30px 0;
   margin-left: auto;
@@ -12,10 +10,10 @@
 }
 
 .jumbotron {
-    margin: 60px 0;
+    margin: 3.750em 0;
     text-align: center;
-	background-color: #FFF;
-	padding: 0;
+    background-color: #FFF;
+    padding: 0;
 }
 .jumbotron h1 {
     font-size: 50px;
@@ -39,14 +37,10 @@
     padding-right: 5px;
 }
 
-.sub-lead {
-    margin-top: -15px;
-}
+.sub-lead {margin-top: -15px;}
 
 /* Centered subheadings */
-.subheadings .span6 {
-    text-align: center;
-}
+.subheadings .span6 {text-align: center;}
 
 .subheadings .span6 p {
     margin-left: 10px;
@@ -60,15 +54,9 @@
 }
 
 /* Hub jumbotron stuff */
-#hub-logo {
-    float: right;
-}
-#hub-jumbotron-text {
-    text-align: left;
-}
-.jumbotron .sub-lead {
-	font-size: 14px;
-}
+#hub-logo {float: right;}
+#hub-jumbotron-text {text-align: left;}
+.jumbotron .sub-lead {font-size: 14px;}
 .jumbotron .lead {
 	margin-bottom: 20px;
 	font-size: 21px;
@@ -81,15 +69,9 @@
     padding-top: 10px;
 }
 /* Some additional badge colors and style */
-.badge {
-    cursor: default;
-}
-.badge-bronze {
-    background-color: #BD6F2D;
-}
-.badge-silver {
-    background-color: #B7BDBD;
-}
+.badge {cursor: default;}
+.badge-bronze {background-color: #BD6F2D;}
+.badge-silver {background-color: #B7BDBD;}
 .badge-diamond {
     background-color: #E0FFFF;
     color: #446;
@@ -108,13 +90,9 @@
     padding-left: 0;
   }
   /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+  .header {margin-bottom: 30px; }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+  .jumbotron {border-bottom: 0;}
 }
 .footer {
   padding-right: 15px;
@@ -127,16 +105,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: inherit;
 	text-rendering: optimizelegibility;
 	margin-top: 10px;
-	margin-right: 0px;
+	margin-right: 0em;
 	margin-bottom: 10px;
-	margin-left: 0px;
+	margin-left: 0em;
 }
 h2 {
 	display: block;
 	-webkit-margin-before: 0.83em;
 	-webkit-margin-after: 0.83em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
+	-webkit-margin-start: 0em;
+	-webkit-margin-end: 0em;
 }
 
 
