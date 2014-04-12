@@ -40,11 +40,56 @@
 .sub-lead {margin-top: -15px;}
 
 /* Centered subheadings */
-.subheadings .span6 {text-align: center;}
+.subheadings .span6 {
+	text-align: center;
+	float: left;
+}
 
 .subheadings .span6 p {
     margin-left: 10px;
     margin-right: 10px;
+}
+@media (min-width: 1200px)
+.row [class*="span"] {
+display: block;
+float: left;
+width: 100%;
+min-height: 30px;
+margin-left: 2.564102564102564%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.row .span6 {
+width: 48.93617021276595%;
+}
+.row [class*="span"] {
+display: block;
+float: left;
+width: 100%;
+min-height: 30px;
+margin-left: 2.127659574468085%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+@media (min-width: 1200px)
+.span6 {
+width: 570px;
+}
+@media (min-width: 1200px)
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 30px;
+}
+.span6 {
+width: 460px;
+}
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 20px;
 }
 
 /* Forum Page list */
@@ -68,6 +113,10 @@
     text-align: right;
     padding-top: 10px;
 }
+@media (min-width: 1200px)
+  .row .span6 {
+	  width: 48.717948717948715%;
+  }
 /* Some additional badge colors and style */
 .badge {cursor: default;}
 .badge-bronze {background-color: #BD6F2D;}
@@ -117,5 +166,10 @@ h2 {
 	-webkit-margin-start: 0em;
 	-webkit-margin-end: 0em;
 }
-
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+@-ms-viewport       { width: device-width; }
 

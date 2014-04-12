@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <title>BMN &middot; Skeleton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
-=======
->>>>>>> origin/master
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png" />
@@ -23,7 +20,7 @@
     <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 
-	<!-- Compatibility layer for ie -->
+    <!-- Compatibility layer for ie -->
     <!--[if lt IE 9]>
     <script src="html5shiv.js"></script>
     <script src="respond.min.js"></script>
@@ -32,6 +29,19 @@
     <!--[if lt IE 7]>
     <link href="bootstrap-ie7.min.css" />
     <![endif]-->
+
+    <!-- Fix for IE mobile -->
+    <script type="text/javascript">
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.querySelector('head').appendChild(msViewportStyle)
+}
+    </script>
 </head>
 <body>
     <div class="container-narrow">
