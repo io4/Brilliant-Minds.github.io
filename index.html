@@ -27,7 +27,8 @@
 	
     <!-- CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="bootstrap/bootstrap-theme.min.css" />
+	<link href="style.css" rel="stylesheet" />
 
     <!-- Compatibility layer for ie -->
     <!--[if lt IE 9]>
@@ -41,7 +42,7 @@
 </head>
 <body>
     <div class="container-narrow">
-        <div class="masthead">
+        <div class="header">
             <ul class="nav nav-pills pull-right">
                 <li class="active"><a href="index.html">Hub</a></li>
                 <li><a href="infos.html">Infos</a></li>
@@ -52,20 +53,20 @@
             <h2>BMN<br><small>Community Hub</small></h2>
         </div>
         <hr>
-        <div class="container-fluid">
+	    <div class="container-fluid">
 		  <div class="jumbotron">
             <img src="img/logo.png" id="hub-logo" alt="BMN Logo" height="126" width="126">
             <h1>Brilliant Minds of the Navy</h1>
             <div id="hub-jumbotron-text">
               <p class="lead">Currently one of the largest and most active groups of <a href="http://powdertoy.co.uk">TPT</a>!</p>
               <p class="sub-lead">We use an United States Navy rates and ranks system to determine leadership. All you really have to do to get higher in rank is to show maturity and to be active.</p>
-              <a class="btn btn-large btn-success" href="http://powdertoy.co.uk/Groups/Page/View.html?Group=832">Group Page</a>
+              <a class="btn btn-lg btn-success" href="http://powdertoy.co.uk/Groups/Page/View.html?Group=832" role="button">Group Page</a>
             </div>
           </div>
 		</div>
         <hr>
-        <div class="row subheadings">
-          <div class="span6">
+        <div class="row marketing subheadings">
+          <div class="col-lg-6 span6">
             <a href="https://github.com/Brilliant-Minds">
               <img src="img/github.png" alt="GitHub" height="64" width="64">
               <h4>GitHub Organization</h4>
@@ -77,7 +78,7 @@
             </a>
             <p>Meet other BMN members inside the #BMN channel at irc.freenode.net. You can alternatively use the <a href="http://webchat.freenode.net/?channels=BMN">Webchat</a> for a quick talk.</p>
           </div>
-          <div class="span6">
+          <div class="col-lg-6 span6">
             <!-- TODO: Fix the search query with a real tag search -->
             <a href="http://powdertoy.co.uk/Browse.html?Search_Query=BMN">
               <img src="img/powder.png" alt="TPT" height="64" width="64">
