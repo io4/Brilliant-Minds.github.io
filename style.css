@@ -80,6 +80,8 @@
     border: 1px solid #AAA;
 }
 .badge-inverse {	background-color: #333;}
+.badge-warning { background-color: #f89406;}
+
 /* If this seems weird, it is */
 #content {
     clear: both;
