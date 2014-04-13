@@ -71,7 +71,7 @@
 }
 
 /* Some additional badge colors and style */
-.badge {cursor: default;}
+.badge {cursor: default;-moz-border-radius:0.25em;-webkit-border-radius:0.25em;border-radius:0.25em;}
 .badge-bronze {background-color: #BD6F2D;}
 .badge-silver {background-color: #B7BDBD;}
 .badge-diamond {
@@ -79,8 +79,8 @@
     color: #446;
     border: 1px solid #AAA;
 }
-.badge-inverse {	background-color: #333;}
-.badge-warning { background-color: #f89406;}
+.badge-inverse {background-color: #333;}
+.badge-warning {background-color: #f89406;}
 
 /* If this seems weird, it is */
 #content {
