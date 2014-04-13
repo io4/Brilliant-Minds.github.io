@@ -1,7 +1,7 @@
 ﻿function load() {
     var s = document.location.search.substring(1);
     if (s == "")
-        createList();
+        createList();f
     else
         createRecord(s);
 }
@@ -97,7 +97,7 @@ function createList() {
         banned.appendTo(preoffbox);
 
         // Add the date of the last update
-        $("<small class=\"muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
+        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
 
         preoffbox.appendTo("#content");
     });
