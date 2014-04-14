@@ -20,8 +20,8 @@
 }
 /* Hub jumbotron stuff */
 #hub-logo {float: right;}
-#hub-jumbotron-text {text-align: left;}
-.jumbotron .sub-lead {font-size: 14px;}
+#hub-jumbotron-text {text-align:left;}
+.jumbotron .sub-lead {font-size:14px;}
 .jumbotron .lead {
 	margin-bottom: 20px;
 	font-size: 21px;
@@ -72,16 +72,27 @@
 }
 
 /* Some additional badge colors and style */
-.badge {cursor: default;-moz-border-radius:0.25em;-webkit-border-radius:0.25em;border-radius:0.25em;}
-.badge-bronze {background-color: #BD6F2D;}
-.badge-silver {background-color: #B7BDBD;}
-.badge-diamond {
-    background-color: #E0FFFF;
+.badge {
+	cursor: default;
+	-moz-border-radius:0.25em;
+	-webkit-border-radius:0.25em;
+	border-radius:0.25em;}
+.badge-bronze {
+	background-color: #BD6F2D;
+}
+.badge-silver {
+	background-color: #B7BDBD;
+}
+.badge-diamond{background-color: #E0FFFF;
     color: #446;
     border: 1px solid #AAA;
 }
-.badge-inverse {background-color: #333;}
-.badge-warning {background-color: #f89406;}
+.badge-inverse {
+	background-color: #333;
+}
+.badge-warning {
+	background-color: #f89406;
+}
 
 /* If this seems weird, it is */
 #content {
@@ -96,9 +107,13 @@
     padding-left: 0;
   }
   /* Space out the masthead */
-  .header {margin-bottom: 30px; }
+  .header {
+	margin-bottom: 30px; 
+  }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {border-bottom: 0;}
+  .jumbotron {
+	border-bottom: 0;
+  }
 }
 .footer {
   padding-right: 15px;
@@ -122,10 +137,22 @@ h2 {
 	-webkit-margin-start: 0em;
 	-webkit-margin-end: 0em;
 }
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
-@-ms-viewport       { width: device-width; }
+@-webkit-viewport   {
+	width: device-width; 
+}
+@-moz-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@viewport {	
+	width: device-width; 
+}
+@-ms-viewport  { 
+	width: device-width; 
+}
 
