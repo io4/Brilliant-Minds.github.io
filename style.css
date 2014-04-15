@@ -75,11 +75,6 @@
 .badge {
 	cursor: default;
 }
-.li.badge, .h4.badge {
-	-moz-border-radius:0.25em;
-	-webkit-border-radius:0.25em;
-	border-radius:0.25em;
-}
 .badge-bronze {
 	background-color: #BD6F2D;
 }
