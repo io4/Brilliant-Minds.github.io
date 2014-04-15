@@ -21,8 +21,7 @@
 			["Amy", "Lieutenant"],
     		["HMMurdock", "Lieutenant JG"],
     		["Box-Poorsoft", "Lieutenant JG"],
-    		["shadowninja16", "Ensign"],
-    		["NUCLEAR_FOX", "Ensign"]],
+    		["shadowninja16", "Ensign"]],
     "preofficers": [["aryaj", "Lower Recruit"],
         ["xetalim", "Upper Recruit"],
         ["C_D_Pro", "Upper Recruit"],
@@ -34,7 +33,7 @@
         ["akronmantpt", "Lower Recruit"],
         ["TPT_Creator", "Lower Recruit"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation"]
+    "banned": ["CatAnimation", "NUCLEAR_FOX"]
 }
 
 
