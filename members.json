@@ -1,5 +1,5 @@
 ﻿{
-    "updated": "2014-04-09",
+    "updated": "2014-04-15",
     "officers": [["KydonShadow", "Fleet Admiral"],
     		["lefouduroi", "Admiral"],
     		["Cacophony", "Admiral"],
@@ -21,12 +21,12 @@
 			["Amy", "Lieutenant"],
     		["HMMurdock", "Lieutenant JG"],
     		["Box-Poorsoft", "Lieutenant JG"],
-    		["shadowninja16", "Ensign"],
-    		["NUCLEAR_FOX", "Ensign"]],
+    		["shadowninja16", "Ensign"]],
     "preofficers": [["aryaj", "Lower Recruit"],
         ["xetalim", "Upper Recruit"],
         ["C_D_Pro", "Upper Recruit"],
         ["Gary55", "Upper Recruit"],
+        ["theeboris", "Lower Recruit"],
         ["cracker1000", "Lower Recruit"],
         ["wardwi", "Lower Recruit"],
         ["powder_generator", "Lower Recruit"],
@@ -34,7 +34,7 @@
         ["akronmantpt", "Lower Recruit"],
         ["TPT_Creator", "Lower Recruit"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation"]
+    "banned": ["CatAnimation", "NUCLEAR_FOX"]
 }
 
 
