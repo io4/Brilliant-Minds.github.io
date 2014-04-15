@@ -3,7 +3,7 @@
 xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://brilliant-minds.github.tk/</loc>
+  <loc>http://brilliant-minds.tk/</loc>
   <mobile:mobile/>
   <image:image>
     <image:loc>
