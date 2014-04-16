@@ -29,17 +29,9 @@
 }
 .sub-lead {margin-top: -15px;}
 /* Custom container */
-.container-narrow {
+.container {
     margin: 0 auto;
-    max-width: 700px;
-}
-.container-narrow > hr {margin: 40px 0 0 0;}
-/*Container-narrow from bootstrap 2.3.2*/
-@media (min-width: 668px) {.container {max-width: 700px;}}
-.container-narrow > hr {
-  margin: 40px 0 0 0;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 730px;
 }
 /* Mod download menu */
 .jumbotron .btn-lg .dropdown-menu {
