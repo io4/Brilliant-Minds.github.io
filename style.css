@@ -35,7 +35,7 @@
 }
 .container-narrow > hr {margin: 40px 0 0 0;}
 /*Container-narrow from bootstrap 2.3.2*/
-@media (min-width: 668px) {.container {max-width: 730px;}}
+@media (min-width: 668px) {.container {max-width: 700px;}}
 .container-narrow > hr {
   margin: 40px 0 0 0;
   margin-left: auto;
