@@ -12,3 +12,7 @@ Main Developers
 ---------------
 * nucular
 * wolfy1339
+
+Contributors
+------------
+* OC39648
