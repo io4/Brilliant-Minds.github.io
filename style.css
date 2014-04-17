@@ -82,14 +82,26 @@
 .badge-warning {
 	background-color: #f89406;
 }
-
+.label {
+	font-weight: bold;
+	padding: 2px 4px;
+	font-size: 11.844px;
+	line-height: 14px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
 /* If this seems weird, it is */
 #content {
     clear: both;
     overflow: hidden;
 }
-#content ul li {
+ul {
+	margin: 0 0 10px 25px;
+	padding: 0;
+}
+li {
 	padding-bottom: 0.2em;
+	line-height: 20px;
+	font-size: 14px;
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
