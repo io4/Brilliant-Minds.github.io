@@ -1,4 +1,4 @@
-@import url('bootstrap.min.css');
+@import url('//netdna.bootstrapcdn.com/bootstrap/2.0.4/css/bootstrap.min.css');
 
 .savegame-outer {
 	float: left;
