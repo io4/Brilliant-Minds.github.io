@@ -1,15 +1,13 @@
-@import url('bootstrap.min.css');
-
 .savegame-outer {
-	float: left;
 	margin: 0;
 }
 
 .savegame {
 	background-color: white;
 	box-sizing: content-box;
-	height: 128px;
 	margin: 9px;
+	margin-bottom: -15px;
+	width: 150px;
 	position: relative;
 	display: block;
 	padding: 4px;

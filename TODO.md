@@ -17,7 +17,8 @@ List
 		- Chrome
 		- Opera
 		- Default Browser
-- Any other good ideas worthy to be on the website! <br/>
+- Make the save embedding code work in bootstrap 2 & 3
+- Any other good ideas worthy to be on the website! 
 - **Note:** Cross out any tasks that are done using the HTML code `<del>`.
 Example: `- <del>Test</del>`. <br/>That would turn out as **
 - <del>Test</del>
