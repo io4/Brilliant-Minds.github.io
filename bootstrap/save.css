@@ -1,7 +1,4 @@
-@import url('//netdna.bootstrapcdn.com/bootstrap/2.0.4/css/bootstrap.min.css');
-
 .savegame-outer {
-	float: left;
 	margin: 0;
 }
 
@@ -9,6 +6,8 @@
 	background-color: white;
 	box-sizing: content-box;
 	margin: 9px;
+	margin-bottom: -15px;
+	width: 187px;
 	position: relative;
 	display: block;
 	padding: 4px;
