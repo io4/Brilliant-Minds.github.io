@@ -17,8 +17,10 @@ List
 		- Chrome
 		- Opera
 		- Default Browser
-- Make the save embedding code work in bootstrap 2 & 3
+- Save Embedding
+	- <del>Make the save embedding code work in bootstrap 2 & 3</del>
+	- Add an overlay on hover to the embedded save using some JavaScript
 - Any other good ideas worthy to be on the website! 
 - **Note:** Cross out any tasks that are done using the HTML code `<del>`.
-Example: `- <del>Test</del>`. <br/>That would turn out as **
+Example: `- <del>Test</del>`. <br/>That would turn out as
 - <del>Test</del>
