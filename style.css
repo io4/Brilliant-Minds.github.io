@@ -45,7 +45,6 @@ hr {
 /* Centered subheadings */
 .subheadings .col-md-6 {
 	text-align: center;
-	float: left;
 }
 
 .subheadings .col-md-6 p {
