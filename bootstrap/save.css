@@ -2,6 +2,9 @@
 	margin: 0;
 }
 
+.savegame img {
+	padding-right: 4px;
+}
 .savegame {
 	background-color: white;
 	box-sizing: content-box;
