@@ -51,7 +51,7 @@ function createList() {
 
     resp.done(function(e) {
         var offbox = $("<div class=\"span6\"></div>");
-        $("<h4>Officers</h4>").appendTo(offbox);
+        $("<h4>Officers (" + e.officers.length + ")</h4>").appendTo(offbox);
         var officers = $("<ul></ul>");
         for (var i = 0; i < e.officers.length; i++) {
             var li = $("<li></li>");
@@ -64,7 +64,7 @@ function createList() {
         offbox.appendTo("#content");
 
         var preoffbox = $("<div class=\"span6\"></div>");
-        $("<h4>Preofficers</h4>").appendTo(preoffbox);
+        $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
         var preofficers = $("<ul></ul>")
         for (var i = 0; i < e.preofficers.length; i++) {
             var li = $("<li></li>");
@@ -76,7 +76,7 @@ function createList() {
         preofficers.appendTo(preoffbox);
 
         // I'll just add the resigned and banned members here for now
-        $("<h4>Resigned</h4>").appendTo(preoffbox);
+        $("<h4>Resigned (" + e.resigned.length + ")</h4>").appendTo(preoffbox);
         var resigned = $("<ul></ul>");
         for (var i = 0; i < e.resigned.length; i++) {
             var li = $("<li></li>");
@@ -86,7 +86,7 @@ function createList() {
         }
         resigned.appendTo(preoffbox);
 
-        $("<h4>Banned</h4>").appendTo(preoffbox);
+        $("<h4>Banned (" + e.banned.length + ")</h4>").appendTo(preoffbox);
         var banned = $("<ul></ul>");
         for (var i = 0; i < e.banned.length; i++) {
             var li = $("<li></li>");
