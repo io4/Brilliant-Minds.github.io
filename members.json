@@ -1,5 +1,5 @@
 ﻿{
-    "updated": "2014-04-29",
+    "updated": "2014-04-30",
     "officers": [["KydonShadow", "Fleet Admiral"],
     	["lefouduroi", "Admiral"],
     	["Cacophony", "Admiral"],
@@ -23,6 +23,9 @@
     	["Box-Poorsoft", "Lieutenant JG"],
     	["shadowninja16", "Ensign"]],
     "preofficers": [["kkawesome", "Officer Candidate"],
+        ["VIP84", "Officer Candidate"],
+        ["TheBen", "Officer Candidate"],
+        ["Hopian", "Officer Candidate"],
         ["xetalim", "Upper Recruit"],
         ["C_D_Pro", "Upper Recruit"],
         ["Gary55", "Upper Recruit"],
@@ -41,7 +44,11 @@
         ["RROONNAANN", "Lower Recruit"],
         ["tronboy9309", "Lower Recruit"],
         ["GodOfEarthAndAll", "Lower Recruit"],
-        ["Sails23", "Lower Recruit"]],
+        ["Sails23", "Lower Recruit"],
+        ["store20", "Lower Recruit"],
+        ["cowman1234", "Lower Recruit"],
+        ["mecha-man", "Lower Recruit"],
+        ["Lord_Herobrine", "Lower Recruit"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
     "banned": ["CatAnimation", "NUCLEAR_FOX"]
 }
