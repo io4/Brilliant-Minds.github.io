@@ -76,7 +76,7 @@ function createList() {
         preofficers.appendTo(preoffbox);
 
         // I'll just add the resigned and banned members here for now
-        $("<h4>Resigned (" + e.resigned.length + ")</h4>").appendTo(preoffbox);
+        $("<h4>Resigned (" + e.resigned.length + ")</h4>").appendTo(offbox);
         var resigned = $("<ul></ul>");
         for (var i = 0; i < e.resigned.length; i++) {
             var li = $("<li></li>");
@@ -84,9 +84,9 @@ function createList() {
                 e.resigned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(resigned);
         }
-        resigned.appendTo(preoffbox);
+        resigned.appendTo(offbox);
 
-        $("<h4>Banned (" + e.banned.length + ")</h4>").appendTo(preoffbox);
+        $("<h4>Banned (" + e.banned.length + ")</h4>").appendTo(offbox);
         var banned = $("<ul></ul>");
         for (var i = 0; i < e.banned.length; i++) {
             var li = $("<li></li>");
@@ -94,9 +94,11 @@ function createList() {
                 e.banned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(banned);
         }
-        banned.appendTo(preoffbox);
+        banned.appendTo(offbox);
 
-        // Add the date of the last update
+        // Add the date of the last update and a count of active members
+        $("<small class=\"muted\">Active members: " + 
+            (e.officers.length + e.preofficers.length) + "</small><br\>").appendTo(preoffbox)
         $("<small class=\"muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
 
         preoffbox.appendTo("#content");
