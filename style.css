@@ -58,6 +58,11 @@
 #hub-logo {
     float: right;
 }
+@media (max-width : 390px) {
+    #hub-logo {
+        float: none;
+    }
+}
 #hub-jumbotron-text {
     text-align: left;
 }
