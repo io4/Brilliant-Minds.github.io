@@ -8,7 +8,9 @@
 
 function createRankBadge(rank) {
     var cl = "";
-    if (rank.indexOf("Admiral") != -1)
+    if (rank.indexOf("Fleet Admiral") != -1)
+        cl = "badge-diamond";
+    else if (rank.indexOf("Admiral") != -1)
         cl = "badge-warning";
     else if (rank.indexOf("Captain") != -1)
         cl = "badge-silver";

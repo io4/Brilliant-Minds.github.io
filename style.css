@@ -77,6 +77,9 @@
 .badge {
     cursor: default;
 }
+.label {
+    cursor: default;
+}
 .badge-bronze {
     background-color: #BD6F2D;
 }
