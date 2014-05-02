@@ -9,6 +9,11 @@
     background-color: #FFFFFF;
     padding: 0;
 }
+@media screen and (min-width: 768px) {
+	.container .jumbotron {
+		padding: 0;
+	}
+}
 .jumbotron h1 {
     font-size: 50px;
     line-height: 1;
