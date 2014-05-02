@@ -41,7 +41,8 @@ function createAwardBadge(name, rank) {
         case 5:
             cl = "badge-diamond"; rn = "Diamond rank"; break;
     }
-    return $("<span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span><span> </span>");
+    var link = "infos.html#award-" + name.toLowerCase().replace(" ", "-");
+    return $("<a href=\"" + link + "\"><span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span></a><span> </span>");
 }
 
 function createList() {
