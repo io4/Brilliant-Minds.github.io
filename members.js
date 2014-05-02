@@ -1,4 +1,4 @@
-﻿function load() {
+﻿﻿function load() {
     var s = document.location.search.substring(1);
     if (s == "")
         createList();
@@ -8,7 +8,9 @@
 
 function createRankBadge(rank) {
     var cl = "";
-    if (rank.indexOf("Admiral") != -1)
+    if (rank.indexOf("Fleet Admiral") != -1)
+        cl = "badge-diamond";
+    else if (rank.indexOf("Admiral") != -1)
         cl = "badge-warning";
     else if (rank.indexOf("Captain") != -1)
         cl = "badge-silver";
@@ -19,9 +21,10 @@ function createRankBadge(rank) {
     else if (rank.indexOf("Candidate") != -1)
         cl = "badge-success";
     else
-        cl = "label-default";
+        cl = "badge-default";
 
-    return $("<span class=\"label " + cl + "\">" + rank + "</span>");
+    var link = "ranks.html#rank-" + rank.toLowerCase().replace(" ", "-");
+    return $("<a href=\"" + link + "\"><span class=\"label " + cl + "\">" + rank + "</span></a>");
 }
 
 function createAwardBadge(name, rank) {
@@ -31,7 +34,7 @@ function createAwardBadge(name, rank) {
         case 0:
             cl = "badge-inverse"; rn = "Badge"; break;
         case 1:
-            cl = "label-default"; rn = "Standard rank"; break;
+            cl = "badge-default"; rn = "Standard rank"; break;
         case 2:
             cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:
@@ -41,7 +44,8 @@ function createAwardBadge(name, rank) {
         case 5:
             cl = "badge-diamond"; rn = "Diamond rank"; break;
     }
-    return $("<span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span><span> </span>");
+    var link = "infos.html#award-" + name.toLowerCase().replace(" ", "-");
+    return $("<a href=\"" + link + "\"><span class=\"badge " + cl + "\" title=\"" + rn + "\">" + name + "</span></a><span> </span>");
 }
 
 function createList() {
@@ -50,8 +54,8 @@ function createList() {
     $("#content").addClass("row");
 
     resp.done(function(e) {
-        var offbox = $("<div class=\"row col-md-6\"></div>");
-        $("<h4>Officers</h4>").appendTo(offbox);
+        var offbox = $("<div class=\"col-md-6\"></div>");
+        $("<h4>Officers (" + e.officers.length + ")</h4>").appendTo(offbox);
         var officers = $("<ul></ul>");
         for (var i = 0; i < e.officers.length; i++) {
             var li = $("<li></li>");
@@ -63,8 +67,8 @@ function createList() {
         officers.appendTo(offbox);
         offbox.appendTo("#content");
 
-        var preoffbox = $("<div class=\"row col-md-6\"></div>");
-        $("<h4>Preofficers</h4>").appendTo(preoffbox);
+        var preoffbox = $("<div class=\"col-md-6\"></div>");
+        $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
         var preofficers = $("<ul></ul>")
         for (var i = 0; i < e.preofficers.length; i++) {
             var li = $("<li></li>");
@@ -76,7 +80,7 @@ function createList() {
         preofficers.appendTo(preoffbox);
 
         // I'll just add the resigned and banned members here for now
-        $("<h4>Resigned</h4>").appendTo(preoffbox);
+        $("<h4>Resigned (" + e.resigned.length + ")</h4>").appendTo(offbox);
         var resigned = $("<ul></ul>");
         for (var i = 0; i < e.resigned.length; i++) {
             var li = $("<li></li>");
@@ -84,9 +88,9 @@ function createList() {
                 e.resigned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(resigned);
         }
-        resigned.appendTo(preoffbox);
+        resigned.appendTo(offbox);
 
-        $("<h4>Banned</h4>").appendTo(preoffbox);
+        $("<h4>Banned (" + e.banned.length + ")</h4>").appendTo(offbox);
         var banned = $("<ul></ul>");
         for (var i = 0; i < e.banned.length; i++) {
             var li = $("<li></li>");
@@ -94,10 +98,12 @@ function createList() {
                 e.banned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(banned);
         }
-        banned.appendTo(preoffbox);
+        banned.appendTo(offbox);
 
-        // Add the date of the last update
-        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
+        // Add the date of the last update and a count of active members
+        $("<small class=\"muted\">Active members: " + 
+            (e.officers.length + e.preofficers.length) + "</small><br\>").appendTo(preoffbox)
+        $("<small class=\"muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
 
         preoffbox.appendTo("#content");
     });

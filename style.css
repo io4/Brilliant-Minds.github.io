@@ -58,6 +58,19 @@ hr {
     padding-left: 20px;
 }
 
+/* Hub jumbotron stuff */
+#hub-logo {
+    float: right;
+}
+@media (max-width : 390px) {
+    #hub-logo {
+        float: none;
+    }
+}
+#hub-jumbotron-text {
+    text-align: left;
+}
+
 /* Award/Badge box at member records */
 .award-box {
     text-align: right;
@@ -67,6 +80,9 @@ hr {
 /* Some additional badge colors and style */
 .badge {
 	cursor: default;
+}
+.label {
+    cursor: default;
 }
 .badge-bronze {
 	background-color: #BD6F2D;
