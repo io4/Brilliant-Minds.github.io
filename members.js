@@ -21,7 +21,7 @@ function createRankBadge(rank) {
     else if (rank.indexOf("Candidate") != -1)
         cl = "badge-success";
     else
-        cl = "badge-default";
+        cl = "badge";
 
     var link = "ranks.html#rank-" + rank.toLowerCase().replace(" ", "-");
     return $("<a href=\"" + link + "\"><span class=\"label " + cl + "\">" + rank + "</span></a>");
@@ -34,7 +34,7 @@ function createAwardBadge(name, rank) {
         case 0:
             cl = "badge-inverse"; rn = "Badge"; break;
         case 1:
-            cl = "badge-default"; rn = "Standard rank"; break;
+            cl = "badge"; rn = "Standard rank"; break;
         case 2:
             cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:
@@ -101,9 +101,9 @@ function createList() {
         banned.appendTo(offbox);
 
         // Add the date of the last update and a count of active members
-        $("<small class=\"muted\">Active members: " + 
+        $("<small class=\"text-muted\">Active members: " + 
             (e.officers.length + e.preofficers.length) + "</small><br\>").appendTo(preoffbox)
-        $("<small class=\"muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
+        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
 
         preoffbox.appendTo("#content");
     });
@@ -132,9 +132,9 @@ function createRecord(name) {
         box.appendTo("#content");
 
         // Links
-        $("<br><a class=\"muted\" href=\"http://powdertoy.co.uk/User.html?Name=" + encodeURIComponent(name) + "\">Forum Profile</a>").appendTo("#content");
+        $("<br><a class=\"text-muted\" href=\"http://powdertoy.co.uk/User.html?Name=" + encodeURIComponent(name) + "\">Forum Profile</a>").appendTo("#content");
         for (var i in e.links) {
-            $("<span class=\"muted\">&nbsp;&middot;&nbsp;</span><a class=\"muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
+            $("<span class=\"text-muted\">&nbsp;&middot;&nbsp;</span><a class=\"text-muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
         }
 
         // Aaand add the page
@@ -157,7 +157,7 @@ function createRecord(name) {
                 status += "(This member is absolutely necessary to keep the group going and thus is autosafe";
         }
         if (status != "")
-            $("<small class=\"muted\">" + status + ")</small>").appendTo("#content");
+            $("<small class=\"text-muted\">" + status + ")</small>").appendTo("#content");
 
         // Prepend the back link
         $("<a href=\"members.html\">< Back</a><br>").prependTo("#content");
