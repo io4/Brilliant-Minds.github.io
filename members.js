@@ -21,7 +21,8 @@ function createRankBadge(rank) {
     else
         cl = "badge-default";
 
-    return $("<span class=\"label " + cl + "\">" + rank + "</span>");
+    var link = "ranks.html#rank-" + rank.toLowerCase().replace(" ", "-");
+    return $("<a href=\"" + link + "\"><span class=\"label " + cl + "\">" + rank + "</span></a>");
 }
 
 function createAwardBadge(name, rank) {
