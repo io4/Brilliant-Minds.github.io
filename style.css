@@ -10,9 +10,9 @@
     padding: 0;
 }
 @media screen and (min-width: 768px) {
-	.container .jumbotron {
-		padding: 0;
-	}
+    .container .jumbotron {
+        padding: 0;
+    }
 }
 .jumbotron h1 {
     font-size: 50px;
@@ -25,6 +25,9 @@
 /* Hub jumbotron stuff */
 #hub-logo {float: right;}
 #hub-jumbotron-text {text-align:left;}
+#hub-btn {
+    text-align:center;
+}
 .jumbotron .sub-lead {font-size:14px;}
 .jumbotron .lead {
 	margin-bottom: 20px;
@@ -74,6 +77,17 @@ hr {
 }
 #hub-jumbotron-text {
     text-align: left;
+}
+.social-buttons {
+text-align: left;
+height: 20px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.social-facebook, .social-github {
+display: inline-block;
+height: 20px;
+width: 18%;
 }
 
 /* Award/Badge box at member records */
