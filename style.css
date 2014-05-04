@@ -66,6 +66,17 @@
 #hub-jumbotron-text {
     text-align: left;
 }
+.social-buttons {
+text-align: left;
+height: 20px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.social-facebook, .social-github {
+display: inline-block;
+height: 20px;
+width: 18%;
+}
 
 /* Award/Badge box at member records */
 .award-box {
