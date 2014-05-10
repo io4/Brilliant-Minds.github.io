@@ -1,7 +1,7 @@
 ﻿{
     "updated": "2014-05-02",
     "officers": [["KydonShadow", "Fleet Admiral"],
-    	["lefouduroi", "Admiral"],
+    	["Hopian", "Admiral"],
     	["Cacophony", "Admiral"],
     	["Schneumer", "Vice Admiral"],
     	["FeynmanLogomaker", "Vice Admiral"],
@@ -24,7 +24,7 @@
     	["shadowninja16", "Ensign"]],
     "preofficers": [["kkawesome", "Officer Candidate"],
         ["VIP84", "Officer Candidate"],
-        ["Hopian", "Officer Candidate"],
+        ["lefouduroi", "Officer Candidate"],
         ["C_D_Pro", "Lower Recruit"],
         ["Gary55", "Lower Recruit"],
         ["cracker1000", "Lower Recruit"],
@@ -52,7 +52,7 @@
         ["madnoodle", "Lower Recruit"],
         ["meganuke9", "Lower Recruit"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation", "NUCLEAR_FOX"]
+    "banned": ["CatAnimation", "NUCLEAR_FOX", "Goodiesohhi"]
 }
 
 
