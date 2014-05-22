@@ -1,4 +1,4 @@
-﻿﻿function load() {
+﻿function load() {
     var s = document.location.search.substring(1);
     if (s == "")
         createList();
@@ -19,9 +19,9 @@ function createRankBadge(rank) {
     else if (rank.indexOf("Lieutenant") != -1 || rank.indexOf("Ensign") != -1)
         cl = "badge-inverse";
     else if (rank.indexOf("Candidate") != -1)
-        cl = "badge-success";
+        cl = "label-success";
     else
-        cl = "badge";
+        cl = "label-default";
 
     var link = "ranks.html#rank-" + rank.toLowerCase().replace(" ", "-");
     return $("<a href=\"" + link + "\"><span class=\"label " + cl + "\">" + rank + "</span></a>");
