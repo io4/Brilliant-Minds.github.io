@@ -47,7 +47,13 @@ hr {
 /* Mod download menu */
 .jumbotron .btn-lg .dropdown-menu {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px;   
+    min-width: 260px;
+}
+.btn-group-vertical {
+    float: left;
+    width: 46%;
+    margin-right: 10px;
 }
 
 /* Centered subheadings */
@@ -79,15 +85,20 @@ hr {
     text-align: left;
 }
 .social-buttons {
-text-align: left;
-height: 20px;
-margin-top: 10px;
-margin-bottom: 5px;
+    text-align: left;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.social-facebook, .social-github {
-display: inline-block;
-height: 20px;
-width: 18%;
+.social-facebook, .social-github, .social-twitter {
+    display: inline-block;
+    height: 20px;
+    width: 18%;
+}
+.social-twitter-2 {
+    display: inline-block;
+    height: 20px;
+    width: 28%;
 }
 
 /* Award/Badge box at member records */
