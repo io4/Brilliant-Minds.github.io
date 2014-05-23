@@ -45,7 +45,7 @@ hr {
     max-width: 730px;
 }
 /* Mod download menu */
-.jumbotron .btn-lg .dropdown-menu {
+.jumbotron .dropdown-menu {
     padding-left: 5px;
     padding-right: 5px;   
     min-width: 260px;
