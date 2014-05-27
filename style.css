@@ -22,12 +22,6 @@
     font-size: 21px;
     padding: 14px 24px;
 }
-/* Hub jumbotron stuff */
-#hub-logo {float: right;}
-#hub-jumbotron-text {text-align:left;}
-#hub-btn {
-    text-align:center;
-}
 .jumbotron .sub-lead {font-size:14px;}
 .jumbotron .lead {
 	margin-bottom: 20px;
