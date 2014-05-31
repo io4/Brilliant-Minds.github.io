@@ -20,6 +20,8 @@ function createRankBadge(rank) {
         cl = "badge-inverse";
     else if (rank.indexOf("Candidate") != -1)
         cl = "label-success";
+    else if (rank.indexOf("Probationary") != -1)
+        cl = "label-danger";
     else
         cl = "label-default";
 
