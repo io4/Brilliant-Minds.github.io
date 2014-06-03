@@ -1,5 +1,6 @@
 .savegame-outer {
 	margin: 0;
+	max-width: 175px;
 }
 
 .savegame img {
