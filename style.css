@@ -3,6 +3,7 @@ body {
     padding-bottom: 40px;
 }
 
+/* General jumbotron styling */
 .jumbotron {
     margin: 3.750em 0;
     text-align: center;
@@ -30,6 +31,7 @@ body {
 	line-height: 30px;
 }
 .sub-lead {margin-top: -15px;}
+
 /* Custom container */
 hr {
 	margin: 30px 0;
@@ -38,6 +40,7 @@ hr {
     margin: 0 auto;
     max-width: 730px;
 }
+
 /* Mod download menu */
 .jumbotron .dropdown-menu {
     padding-left: 5px;
@@ -78,6 +81,8 @@ hr {
 #hub-jumbotron-text {
     text-align: left;
 }
+
+/* Social buttons on the hub */
 .social-buttons {
     text-align: left;
     height: 20px;
@@ -138,6 +143,7 @@ hr {
 	line-height: 14px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 }
+
 /* If this seems weird, it is */
 #content {
     clear: both;
@@ -151,6 +157,7 @@ li {
 	line-height: 20px;
 	font-size: 14px;
 }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -167,10 +174,12 @@ li {
 	border-bottom: 0;
   }
 }
+
 .footer {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 h1, h2, h3 {line-height: 40px;}
 
 h1, h2, h3, h4, h5, h6 {
@@ -182,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 	margin-left: 0em;
 }
+
 h2 {
 	display: block;
 	-webkit-margin-before: 0.83em;
@@ -189,6 +199,7 @@ h2 {
 	-webkit-margin-start: 0em;
 	-webkit-margin-end: 0em;
 }
+
 @-webkit-viewport   {
 	width: device-width; 
 }
