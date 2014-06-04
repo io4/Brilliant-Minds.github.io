@@ -114,10 +114,28 @@ function createList() {
 function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
     resp.done(function(e) {
+        // Avatar
+        var avatar = $("<img class=\"member-avatar\"></img>").appendTo("#content");
+        // fetch the image URL from the powdertoythings.co.uk API wrapper
+        var resp = jQuery.getJSON("http://powdertoythings.co.uk/Powder/User.json?Name="
+            + encodeURIComponent(name));
+        resp.done(function(e) {
+            var src = e.User.Avatar;
+            // check if it's hosted on gravatar or powdertoy.co.uk
+            if (src.substring(0, 4) != "http")
+                src = "http://powdertoy.co.uk/" + src;
+            avatar[0].src = src;
+
+            // remove the element if no avatar was found
+            avatar[0].onerror = function(e) {
+                avatar.remove();
+            }
+        });
+
         // Title
         var title = $("<h4>" + name + " </h4>");
         createRankBadge(e.rank).appendTo(title);
-        title.prependTo("#content");
+        title.appendTo("#content");
         $("<i>" + e.rank_comment + "</i>").appendTo("#content");
 
         // Put awards into a table and sort it by rank
