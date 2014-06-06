@@ -55,9 +55,10 @@
     	["VIP84", "Lower Recruit"],
     	["mecha-man", "Lower Recruit"],
     	["159819", "Lower Recruit"],
-    	["Darthanihlus", "Probationary"]],
+    	["Darthanihlus", "Probationary"],
+    	["NUCLEAR_FOX", "Probationary"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation", "NUCLEAR_FOX", "Goodiesohhi"]
+    "banned": ["CatAnimation", "Goodiesohhi"]
 }
 
 
