@@ -1,5 +1,5 @@
 {
-    "updated": "2014-06-01",
+    "updated": "2014-06-05",
     "officers": [["KydonShadow", "Fleet Admiral"],
     	["Hopian", "Admiral"],
     	["Cacophony", "Admiral"],
@@ -13,18 +13,18 @@
     	["sandwichlizard", "Captain"],
     	["benthecrazy", "Commander"],
     	["BigPig", "Commander"],
-    	["nucular", "Lieutenant Commander"],
+    	["nucular", "Commander"],
     	["fireball5000", "Lieutenant Commander"],
+    	["Protcom", "Lieutenant Commander"],
+    	["h4zardz1", "Lieutenant Commander"],
     	["ShadowPlasma", "Lieutenant"],
-    	["h4zardz1", "Lieutenant"],
     	["Amy", "Lieutenant"],
+    	["io", "Lieutenant"],
     	["HMMurdock", "Lieutenant JG"],
     	["Box-Poorsoft", "Lieutenant JG"],
+    	["JamesB", "Lieutenant JG"],
     	["shadowninja16", "Ensign"]],
-    "preofficers": [["io", "Officer Candidate"],
-    	["Protcom", "Officer Candidate"],
-    	["JamesB", "Officer Candidate"],
-    	["Bowserinator", "Upper Recruit"],
+    "preofficers": [["Bowserinator", "Upper Recruit"],
     	["C-D-Pro", "Lower Recruit"],
     	["Gary55", "Lower Recruit"],
     	["cracker1000", "Lower Recruit"],
@@ -55,9 +55,10 @@
     	["VIP84", "Lower Recruit"],
     	["mecha-man", "Lower Recruit"],
     	["159819", "Lower Recruit"],
-    	["Darthanihlus", "Probationary"]],
+    	["Darthanihlus", "Probationary"],
+    	["NUCLEAR_FOX", "Probationary"]],
     "resigned": ["billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation", "NUCLEAR_FOX", "Goodiesohhi"]
+    "banned": ["CatAnimation", "Goodiesohhi"]
 }
 
 
