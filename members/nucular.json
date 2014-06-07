@@ -1,9 +1,10 @@
 {
     "awards": {
-        "Technical": 0
+        "Technical": 0,
+        "Critical Contribution": 4
     },
 
-    "rank": "Lieutenant Commander",
+    "rank": "Commander",
     "rank_comment": "Medium Officers Counsel; AC Sit-in",
 
     "voucher": false,
