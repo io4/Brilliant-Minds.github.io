@@ -13,7 +13,7 @@
     "rank": "To be defined",
     "rank_comment": "",
     // These can be anything.
-    // ==> Remember to change this inside member.json too!
+    // ==> Remember to change this inside members.json too!
 
     "voucher": false, // Change to true when the member has a voucher
     "safe": 0, // Safe status. 0 = Not safe, 1 = Safe, 2 = Autosafe
