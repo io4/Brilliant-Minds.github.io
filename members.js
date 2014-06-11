@@ -36,7 +36,7 @@ function createAwardBadge(name, rank) {
         case 0:
             cl = "badge-inverse"; rn = "Badge"; break;
         case 1:
-            cl = "badge"; rn = "Standard rank"; break;
+            cl = "badge-default"; rn = "Standard rank"; break;
         case 2:
             cl = "badge-bronze"; rn = "Bronze rank"; break;
         case 3:
@@ -186,7 +186,7 @@ function createRecord(name) {
     resp.error(function(e) {
         // Prepend an error message
         $("<a href=\"members.html\">< Back</a>").prependTo("#content");
-        $("<div class=\"alert alert-error\">Sorry, I couldn't find a member page for "
+        $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a member page for "
             + name + " :(</div>").appendTo("#content");
     });
 }

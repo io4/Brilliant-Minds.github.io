@@ -1,15 +1,17 @@
 {
     "awards": {
-        "Front Page": 1,
+        "Front Page": 4,
         "Leadership": 0,
-        "Admirals Counsel": 0
+        "Admirals Counsel": 0,
+        "Weapons Specialist": 0,
+        "Electrician": 0,
     },
 
     "rank": "Rear Admiral",
     "rank_comment": "Lower Half; Admirals Counsel",
 
-    "voucher": false,
-    "safe": 2,
+    "voucher": true,
+    "safe": 1,
 
     "links": {},
 

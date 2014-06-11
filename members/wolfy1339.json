@@ -1,16 +1,17 @@
 {
     "awards": {
         "Technical": 0,
-        "Admirals Counsel": 0
+        "Admirals Counsel": 0,
+        "Critical Contribution": 5
     },
 
     "rank": "Rear Admiral",
-    "rank_comment": "Better Half; Admirals Counsel",
+    "rank_comment": "Upper Half; Admirals Counsel",
 
     "voucher": false,
     "safe": 2,
 
     "links": {},
 
-    "page": "First Technical Officer, at the rank of Lieutenant Commander. First Lieutenant Commander and first to be promoted at the rank of Captain too.<br>Created the BMNBot for the IRC Channel at the rank of Lieutenant Commander.<br> Helped create the BMN Website at the rank of Rear Admiral"
+    "page": "First Technical Officer, at the rank of Lieutenant Commander. First Lieutenant Commander and first to be promoted at the rank of Captain too.<br>Created the BMNBot for the IRC Channel at the rank of Lieutenant Commander.<br> Helped create the BMN Website at the rank of Rear Admiral<br>Has proved himself invaluable to the group and it's continued function."
 }
