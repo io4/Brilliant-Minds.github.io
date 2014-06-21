@@ -88,6 +88,8 @@ hr {
     height: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
 }
 .social-facebook, .social-github, .social-twitter {
     display: inline-block;
