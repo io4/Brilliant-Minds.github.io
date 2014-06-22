@@ -102,6 +102,18 @@ function createList() {
         }
         banned.appendTo(offbox);
 
+        //I'll add the probationary members here after the banned list
+        $("<h4>Probationary (" + e.probationary.length + ")</h4>").appendTo(offbox);
+        var probationary = $("<ul></ul>");
+        for (var i = 0; i < e.probationary.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.probationary[i][0]) + "\">" +
+                e.probationary[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.probationary[i][1]).appendTo(li);
+            li.appendTo(probationary);
+        }
+        probationary.appendTo(offbox);
+
         // Add the date of the last update and a count of active members
         $("<small class=\"text-muted\">Active members: " + 
             (e.officers.length + e.preofficers.length) + "</small><br\>").appendTo(preoffbox)

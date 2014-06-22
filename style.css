@@ -131,7 +131,8 @@ hr {
 .badge-silver {
 	background-color: #B7BDBD;
 }
-.badge-diamond{background-color: #E0FFFF;
+.badge-diamond{
+    background-color: #E0FFFF;
     color: #446;
     border: 1px solid #AAA;
 }
@@ -162,7 +163,9 @@ li {
 	line-height: 20px;
 	font-size: 14px;
 }
-
+.offbox #rank-fleet-admiral {
+	margin-bottom: 0.2em;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
