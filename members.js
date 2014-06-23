@@ -116,8 +116,8 @@ function createList() {
 
         // Add the date of the last update and a count of active members
         $("<small class=\"text-muted\">Active members: " + 
-            (e.officers.length + e.preofficers.length + e.probationary.length) + "</small><br\>").appendTo(preoffbox)
-        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(preoffbox);
+            (e.officers.length + e.preofficers.length + e.probationary.length) + "</small><br\>").appendTo(offbox)
+        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(offbox);
 
         preoffbox.appendTo("#content");
     });
