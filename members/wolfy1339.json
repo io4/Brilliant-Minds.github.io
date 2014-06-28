@@ -2,7 +2,9 @@
     "awards": {
         "Technical": 0,
         "Admirals Counsel": 0,
-        "Critical Contribution": 5
+        "Critical Contribution": 5,
+        "Colonist": 0,
+        "Offworld Governor": 2
     },
 
     "rank": "Rear Admiral",
