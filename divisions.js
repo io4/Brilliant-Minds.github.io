@@ -89,7 +89,7 @@ function createList() {
             createRankBadge(e.bmnrdd[i][1]).appendTo(li);
             li.appendTo(bmnrdd);
         }
-        bmnrd.appendTo(securitybox);
+        bmnrdd.appendTo(securitybox);
         // Add the date of the last update
         $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(technicalbox);
 
