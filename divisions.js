@@ -32,7 +32,7 @@ function createList() {
 
     resp.done(function(e) {
         var securitybox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Security Division (" + e.bmnsd.length + ")</h4>").appendTo(securitybox);
+        $("<h4>Security (" + e.bmnsd.length + ")</h4>").appendTo(securitybox);
         var bmnsd = $("<ul></ul>");
         for (var i = 0; i < e.bmnsd.length; i++) {
             var li = $("<li></li>");
@@ -45,7 +45,7 @@ function createList() {
         securitybox.appendTo("#content");
 
         var technicalbox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Technical Division (" + e.bmntd.length + ")</h4>").appendTo(technicalbox);
+        $("<h4>Technical (" + e.bmntd.length + ")</h4>").appendTo(technicalbox);
         var bmntd = $("<ul></ul>")
         for (var i = 0; i < e.bmntd.length; i++) {
             var li = $("<li></li>");
@@ -57,7 +57,7 @@ function createList() {
         bmntd.appendTo(technicalbox);
         technicalbox.appendTo("#content");
 
-        $("<h4>Public Relations Division (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
+        $("<h4>Public Relations (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
         var bmnprd = $("<ul></ul>");
         for (var i = 0; i < e.bmnprd.length; i++) {
             var li = $("<li></li>");
@@ -68,7 +68,7 @@ function createList() {
         }
         bmnprd.appendTo(securitybox);
 
-        $("<h4>Records Division (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
+        $("<h4>Records (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
         var bmnrd = $("<ul></ul>");
         for (var i = 0; i < e.bmnrd.length; i++) {
             var li = $("<li></li>");
@@ -80,7 +80,7 @@ function createList() {
         bmnrd.appendTo(technicalbox);
 
 
-        $("<h4>Research and Development Division (" + e.bmnrdd.length + ")</h4>").appendTo(securitybox);
+        $("<h4>Research and Development (" + e.bmnrdd.length + ")</h4>").appendTo(securitybox);
         var bmnrdd = $("<ul></ul>");
         for (var i = 0; i < e.bmnrdd.length; i++) {
             var li = $("<li></li>");
