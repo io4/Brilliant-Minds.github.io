@@ -1,5 +1,5 @@
 {
-    "updated": "2014-06-23",
+    "updated": "2014-07-04",
     "bmnsd": [["Hopian", "Admiral"],
     	["nijalninja98", "Rear Admiral"],
     	["OC39648", "Rear Admiral"],
@@ -8,6 +8,15 @@
     	["nucular", "Commander"],
 	["OC39648", "Rear Admiral"],
 	["Amy", "Lieutenant"]],
-    "bmnrd": [["wolfy1339", "Rear Admiral"]]
+    "bmnprd": [["dom2mom", "Rear Admiral"],
+        ["Sandwichlizard", "Captain"]],
+
+    "bmnrd": [["wolfy1339", "Rear Admiral"]],
+
+    "bmnrdd": [["minecraft-physics", "Captain"],
+        ["Sandwichlizard", "Captain"],
+        ["nijalninja98", "Rear Admiral"],
+        ["dom2mom", "Rear Admiral"],
+        ["Protcom", "Lieutenant Commander"]]
 }
 

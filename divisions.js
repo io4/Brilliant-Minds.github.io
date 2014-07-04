@@ -57,7 +57,18 @@ function createList() {
         bmntd.appendTo(technicalbox);
         technicalbox.appendTo("#content");
 
-        $("<h4>BMN Records Division (" + e.bmnrd.length + ")</h4>").appendTo(securitybox);
+        $("<h4>BMN Public Relations Division (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
+        var bmnprd = $("<ul></ul>");
+        for (var i = 0; i < e.bmnprd.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.bmnprd[i][0]) + "\">" +
+                e.bmnprd[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.bmnprd[i][1]).appendTo(li);
+            li.appendTo(bmnprd);
+        }
+        bmnprd.appendTo(securitybox);
+
+        $("<h4>BMN Records Division (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
         var bmnrd = $("<ul></ul>");
         for (var i = 0; i < e.bmnrd.length; i++) {
             var li = $("<li></li>");
@@ -66,8 +77,19 @@ function createList() {
             createRankBadge(e.bmnrd[i][1]).appendTo(li);
             li.appendTo(bmnrd);
         }
-        bmnrd.appendTo(securitybox);
+        bmnrd.appendTo(technicalbox);
 
+
+        $("<h4>BMN Research and Development Division (" + e.bmnrdd.length + ")</h4>").appendTo(securitybox);
+        var bmnrdd = $("<ul></ul>");
+        for (var i = 0; i < e.bmnrdd.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.bmnrdd[i][0]) + "\">" +
+                e.bmnrdd[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.bmnrdd[i][1]).appendTo(li);
+            li.appendTo(bmnrdd);
+        }
+        bmnrd.appendTo(securitybox);
         // Add the date of the last update
         $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(technicalbox);
 
