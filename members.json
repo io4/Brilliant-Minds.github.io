@@ -11,7 +11,6 @@
     	["OC39648", "Rear Admiral"],
     	["minecraft-physics", "Captain"],
     	["Sandwichlizard", "Captain"],
-    	["BigPig", "Commander"],
     	["benthecrazy", "Commander"],
     	["nucular", "Commander"],
     	["Fireball5000", "Lieutenant Commander"],
@@ -75,7 +74,7 @@
     	["YouCantHandleTheWojo", "Lower Recruit"]],
     "probationary": [["Darthanihlus", "Probationary"],
     	["NUCLEAR_FOX", "Probationary"]],
-    "resigned": ["billion57", "PowderTech1350", "vusicia"],
+    "resigned": ["billion57", "PowderTech1350", "vusicia", "BigPig",],
     "banned": ["CatAnimation", "Goodiesohhi"]
 }
 
