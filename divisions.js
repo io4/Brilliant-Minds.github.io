@@ -18,6 +18,8 @@ function createRankBadge(rank) {
         cl = "badge-inverse";
     else if (rank.indexOf("Candidate") != -1)
         cl = "label-success";
+    else if (rank.indexOf("Chief") != -1)
+        cl = "label-primary"
     else
         cl = "label-default";
 

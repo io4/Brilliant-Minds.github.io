@@ -3,13 +3,13 @@
         "Electrician": 0
     },
 
-    "rank": "Commander",
-    "rank_comment": "Medium Officers Counsel",
+    "rank": "Resigned",
+    "rank_comment": "",
 
     "voucher": false,
-    "safe": 1,
+    "safe": 0,
 
     "links": {},
 
-    "page": "There were no record created for this member yet."
+    "page": "This user resigned from the group."
 }

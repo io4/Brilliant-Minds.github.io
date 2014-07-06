@@ -22,6 +22,8 @@ function createRankBadge(rank) {
         cl = "label-success";
     else if (rank.indexOf("Probationary") != -1)
         cl = "label-danger";
+    else if (rank.indexOf("Chief") != -1)
+        cl = "label-primary";
     else
         cl = "label-default";
 
