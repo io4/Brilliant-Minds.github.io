@@ -129,7 +129,7 @@ function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
     resp.done(function(e) {
         // Avatar
-        var avatar = $("<img class=\"member-avatar\"></img>").appendTo("#content");
+        var avatar = $("<img class=\"member-avatar\" style=\"border-radius:3px;position:relative;z-index:-1;\"></img>").appendTo("#content");
         // fetch the image URL from the powdertoythings.co.uk API wrapper
         var resp = jQuery.getJSON("http://powdertoythings.co.uk/Powder/User.json?Name="
             + encodeURIComponent(name));
