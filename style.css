@@ -84,24 +84,28 @@ hr {
 
 /* Social buttons on the hub */
 .social-buttons {
-    text-align: left;
     height: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-}
-.social-facebook, .social-github, .social-twitter {
+    padding-top: 10px;
+    padding-bottom: 5px;
     display: inline-block;
-    height: 20px;
-    width: 18%;
 }
 .social-twitter-2 {
-    display: inline-block;
-    height: 20px;
     width: 28%;
 }
-
+.social-facebook, .social-github, .social-twitter, .social-twitter-2 {
+    padding: 5px 8px;
+    line-height: 1;
+    display: inline-block;
+}
+.social-buttons .container ul {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.social-github, .social-twitter {
+    width: 100px;
+}
 /* Award/Badge box at member records */
 .award-box {
     text-align: right;
