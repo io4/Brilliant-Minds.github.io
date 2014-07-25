@@ -1,5 +1,5 @@
 {
-    "updated": "2014-07-04",
+    "updated": "2014-07-25",
     "bmnsd": [["Hopian", "Admiral"],
     	["nijalninja98", "Rear Admiral"],
     	["wolfy1339", "Vice Admiral"],
@@ -7,7 +7,9 @@
     "bmntd": [["wolfy1339", "Vice Admiral"],
     	["nucular", "Commander"],
 	["OC39648", "Rear Admiral"],
-	["Amy", "Lieutenant"]],
+	["Amy", "Lieutenant"],
+	["Protcom", "Lieutenant Commander"],
+	["io", "Lieutenant Commander"]],
     "bmnprd": [["dom2mom", "Rear Admiral"],
         ["Sandwichlizard", "Captain"]],
     "bmnrd": [["wolfy1339", "Vice Admiral"]],
@@ -15,6 +17,7 @@
         ["Sandwichlizard", "Captain"],
         ["nijalninja98", "Rear Admiral"],
         ["dom2mom", "Rear Admiral"],
-        ["Protcom", "Lieutenant Commander"]]
+        ["Protcom", "Lieutenant Commander"],
+        ["io", "Lieutenant Commander"]]
 }
 
