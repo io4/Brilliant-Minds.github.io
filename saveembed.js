@@ -10,8 +10,8 @@ function loadSaves() {
         var img = $this.attr("data-img");
 
         var stitle;
-        if (title.length >= 21)
-            stitle = title.substring(0, 21) + "...";
+        if (title.length >= 19)
+            stitle = title.substring(0, 19) + "...";
         else
             stitle = title;
 
