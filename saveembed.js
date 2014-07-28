@@ -12,10 +12,11 @@ function loadSaves() {
         var stitle;
         if (title.length >= 21)
             stitle = title.substring(0, 21) + "...";
-        else if (title == "BMN LOGO IMPROVED IMPROVED")
-            stitle = title.substring(0, 19) + "..."
         else
             stitle = title;
+        
+        if (title == "BMN LOGO IMPROVED IMPROVED")
+            stitle = title.substring(0, 19) + "..."
 
         if (img == undefined)
             img = "http://static.powdertoy.co.uk/" + id + "_small.png";
