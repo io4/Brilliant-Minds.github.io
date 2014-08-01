@@ -44,3 +44,15 @@ function loadSaves() {
 }
 
 $(loadSaves);
+/*$(document).bind("ready", function () {
+    ImgOverlay = $(".savegame .overlay");
+    ImgOverlay.on("mouseover", function () {
+        ImgOverlay.animate({ "opacity": 1, "top": "3px" }, 200);
+    });
+
+    ImgOverlay.on("mouseleave", function () {
+        CImgOverlay = $(this);
+        CImgElement = CImgOverlay.parent().children("a");
+        CImgOverlay.animate({ "opacity": 0, "top": "-23px" }, 200);
+    });
+});*/
