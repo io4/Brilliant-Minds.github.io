@@ -74,9 +74,9 @@
 	top: 3px;
 }
 
-/*.savegame:hover  .overlay {
+.savegame:hover  .overlay {
 	opacity: 1;
-}*/
+}
 
 .savegame .overlay input.btn {
 	margin-bottom: 3px; 
