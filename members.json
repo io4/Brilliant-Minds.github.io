@@ -1,5 +1,5 @@
 {
-    "updated": "2014-07-31",
+    "updated": "2014-08-06",
     "officers": [["KydonShadow", "Fleet Admiral"],
     	["Hopian", "Admiral"],
     	["Cacophony", "Admiral"],
@@ -79,10 +79,9 @@
     	["xetalim", "Lower Recruit"],
     	["Xoner", "Lower Recruit"],
     	["YouCantHandleTheWojo", "Lower Recruit"]],
-    "probationary": [["Darthanihlus", "Probationary"],
-    	["NUCLEAR_FOX", "Probationary"]],
+    "probationary": [["NUCLEAR_FOX", "Probationary"]],
     "resigned": ["BigPig", "billion57", "PowderTech1350", "vusicia"],
-    "banned": ["CatAnimation", "Goodiesohhi"]
+    "banned": ["CatAnimation", "Goodiesohhi", "Darthanihlus"]
 }
 
 
