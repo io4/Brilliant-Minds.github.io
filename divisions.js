@@ -98,7 +98,7 @@ function createList() {
     });
 }
 
-function createPage(name) {
+/*function createPage(name) {
     var resp = jQuery.getJSON("divisions/" + name + ".json");
 
         // Title
@@ -125,6 +125,6 @@ function createPage(name) {
         $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a division page for "
             + name + " :(</div>").appendTo("#content");
     });
-}
+}*/
 
 $(load);
