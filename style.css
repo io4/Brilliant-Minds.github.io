@@ -181,6 +181,10 @@ hr {
     -webkit-border-radius: 12px; 
     -moz-border-radius: 12px; 
     border-radius: 12px;
+    margin-botom: 25px;
+}
+.datagrid:last-child {
+	margin-botom: 0;
 }
 .datagrid table td, .datagrid table th {padding: 3px 20px;}
 .datagrid table thead th {
