@@ -72,6 +72,16 @@ function createList() {
         }
         officers.appendTo(offbox);
         offbox.appendTo("#content");
+        
+        $("<h4>Enlisted (" + e.enlisted.length + ")</h4>").appendTo(offbox);
+        var enlisted = $("<ul></ul>");
+        for (var i = 0; i < e.enlisted.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.enlisted[i][0]) + "\">" +
+                e.enlisted[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.enlisted[i][1]).appendTo(li);
+            li.appendTo(enlisted);
+        }
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
