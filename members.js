@@ -149,7 +149,7 @@ function createRecord(name) {
         resp.done(function(e) {
             var src = e.User.Avatar;
             // check if it's hosted on gravatar or powdertoy.co.uk
-            if (src.substring(0, 4) != "http")
+            if not (src.substring(0, 4) != "http")
                 src = "http://powdertoy.co.uk" + src;
             avatar[0].src = src;
 
