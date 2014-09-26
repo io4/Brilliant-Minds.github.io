@@ -2,6 +2,8 @@ function load() {
     var s = document.location.search.substring(1);
     if (s == "")
         createList();
+    else
+        createPage(s);
 }
 
 function createRankBadge(rank) {
@@ -98,19 +100,11 @@ function createList() {
     });
 }
 
-/*function createPage(name) {
+function createPage(name) {
     var resp = jQuery.getJSON("divisions/" + name + ".json");
 
         // Title
         var title = $("<h4>" + name + " </h4>");
-        createRankBadge(e.rank).appendTo(title);
-        title.appendTo("#content");
-        $("<i>" + e.rank_comment + "</i>").appendTo("#content");
-
-        // Links
-        for (var i in e.links) {
-            $("<span class=\"text-muted\">&nbsp;&middot;&nbsp;</span><a class=\"text-muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
-        }
 
         // Aaand add the page
         $("<div class=\"member-page\">" + e.page + "</div>").appendTo("#content");
@@ -125,6 +119,6 @@ function createList() {
         $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a division page for "
             + name + " :(</div>").appendTo("#content");
     });
-}*/
+}
 
 $(load);
