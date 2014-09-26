@@ -82,6 +82,7 @@ function createList() {
             createRankBadge(e.enlisted[i][1]).appendTo(li);
             li.appendTo(enlisted);
         }
+        enlisted.appendTo(offbox);
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
