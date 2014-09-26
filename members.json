@@ -22,8 +22,8 @@
     	["DarthGhostBuster", "Lieutenant JG"],
      	["JamesB", "Lieutenant JG"],
     	["Schneumer", "Chief Warrant"],
-    	["HitlerSucks", "Petty Officer"],
     	["UC17", "Warrant Officer"]],
+    "enlisted": [["HitlerSucks", "Petty Officer"]]
     "preofficers": [["Bowserinator", "Seaman"],
     	["Fireball5000", "Seaman"],
     	["HMMurdock", "Seaman"],
