@@ -151,6 +151,8 @@ function createRecord(name) {
             // check if it's hosted on gravatar or powdertoy.co.uk
             if (src.substring(0, 4) != "http")
                 src = "http://powdertoy.co.uk" + src;
+            else
+                src = src;
             avatar[0].src = src;
 
             // remove the element if no avatar was found
