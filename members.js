@@ -72,6 +72,17 @@ function createList() {
         }
         officers.appendTo(offbox);
         offbox.appendTo("#content");
+        
+        $("<h4>Enlisted (" + e.enlisted.length + ")</h4>").appendTo(offbox);
+        var enlisted = $("<ul></ul>");
+        for (var i = 0; i < e.enlisted.length; i++) {
+            var li = $("<li></li>");
+            $("<a href=\"members.html?" + encodeURIComponent(e.enlisted[i][0]) + "\">" +
+                e.enlisted[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.enlisted[i][1]).appendTo(li);
+            li.appendTo(enlisted);
+        }
+        enlisted.appendTo(offbox);
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
@@ -140,6 +151,8 @@ function createRecord(name) {
             // check if it's hosted on gravatar or powdertoy.co.uk
             if (src.substring(0, 4) != "http")
                 src = "http://powdertoy.co.uk" + src;
+            else
+                src = src;
             avatar[0].src = src;
 
             // remove the element if no avatar was found
