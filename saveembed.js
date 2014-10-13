@@ -44,17 +44,15 @@ function loadSaves() {
 }
 
 $(loadSaves);
-/*$(document).bind("ready", function () {
-    ImgOverlay = $(".savegame .overlay");
-    ImgOverlay.on("mouseover", function () {
-        ImgOverlay.animate({ opacity: 1, top: "3px" }, 200);
-    });
+$(document).bind("ready", function(){
+  SaveElement = $(".savegame");
 
-    ImgOverlay.on("mouseleave", function () {
-        ImgOverlay.animate({ opacity: 0, top: "-23px" }, 200, function () {
-            ImgOverlay.remove(function () {
-                $(loadSaves);
-            });
-        });
-    });
-});*/
+  SaveElement.on("mouseover", function () {
+    $(this).find(".overlay").animate({ opacity: 1, top: "3px" }, 150);
+  });
+
+  SaveElement.on("mouseleave", function () {
+     $(this).find(".overlay").animate({ opacity: 0, top: "-23px" }, 150);
+  });
+});
+

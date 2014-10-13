@@ -70,12 +70,7 @@
 	height: 96px;
 	padding: 3px 3px 0 3px;
 	opacity: 0;
-	transition: opacity 0.5s;
 	top: 3px;
-}
-
-.savegame:hover  .overlay {
-	opacity: 1;
 }
 
 .savegame .overlay input.btn {
@@ -93,5 +88,4 @@
 .savegame form {
 	margin: 0;
 }
-
 
