@@ -70,24 +70,43 @@
 </head>
 <body>
     <div id="fb-root"></div>
-    <script>(function(e,t,n){var r,i=e.getElementsByTagName(t)[0];if(e.getElementById(n))return;r=e.createElement(t);r.id=n;r.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=605566596199439&version=v2.0";i.parentNode.insertBefore(r,i)})(document,"script","facebook-jssdk")</script>
+    <script>(function(e,t,n){var r,i=e.getElementsByTagName(t)[0];if(e.getElementById(n))return;r=e.createElement(t);r.id=n;r.src="http://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=605566596199439&version=v2.0";i.parentNode.insertBefore(r,i)})(document,"script","facebook-jssdk")</script>
     <div class="container">
-        <div class="header">
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="index.html">Hub</a></li>
-                <li><a href="infos.html">Infos</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="ranks.html">Rank System</a></li>
-                <li><a href="divisions.html">Divisions</a></li>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">BMN <small>Hub</small></span>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Hub <span class="glyphicon glyphicon-home"></span></a></li>
+              <li><a href="members.html">Members</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="infos.html">Infos</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="ranks.html">Ranks</a></li>
+                  </ul>
+                </li>
                 <li><a href="saves.html">User Saves</a></li>
-            </ul>
-            <h2>BMN<br><small>Community Hub</small></h2>
+                <li><a href="divisions.html">Divisions</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="mailto:webmaster@wolfy1339.tk">Contact Us</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <hr>
 
-        <div class="container-fluid">
           <div class="jumbotron">
             <img src="img/logo.png" id="hub-logo" rel="prefetch" alt="BMN Logo" height="126" width="126">
             <h1>Brilliant Minds of the Navy</h1>
