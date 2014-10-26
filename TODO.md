@@ -9,10 +9,9 @@ and generally everything helpful.
 List
 ----
 - Make information pages for each of the divisions
-- <del>Save Embedding
-	- Make the save embedding code work in bootstrap 2 & 3
-	- Add an overlay on hover to the embedded save using some JavaScript
-</del>
+- <del>Save Embedding</del>
+	- <del>Make the save embedding code work in bootstrap 2 & 3</del>
+	- <del>Add an overlay on hover to the embedded save using some JavaScript</del>
 
 - Make a script to generate a user record page for every member in [members.json](https://github.com/Brilliant-Minds/Brilliant-Minds.github.io/blob/master/members.json), if a member is already there then change their rank. If a member has resigned, add to the page that the member has resigned.
 - Any other good ideas worthy to be on the website! 
