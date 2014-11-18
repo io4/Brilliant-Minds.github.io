@@ -16,3 +16,6 @@ Main Developers
 Contributors
 ------------
 * OC39648
+* FeynmanLogomaker
+* Protcom
+* io
