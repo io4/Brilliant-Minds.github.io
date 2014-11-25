@@ -2,7 +2,7 @@
 // <save data-id="1234567" data-author="Author Name" data-title=""
 
 function loadSaves() {
-    $.each($("save"), function(o) {
+    $.each($("save"), function() {
         $this = $(this);
         var id = $this.attr("data-id");
         var author = $this.attr("data-author");
