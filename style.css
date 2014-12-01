@@ -89,6 +89,15 @@ hr {
     padding-bottom: 5px;
     display: inline-block;
 }
+.social-buttons iframe {
+    overflow: hidden;
+    border-width: 0px;
+    border: none;
+    opacity: 1;
+    max-height:20px;
+    max-width:200pxl
+    background: none transparent;
+}
 .social-twitter-2 {
     width: 28%;
 }
