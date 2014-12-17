@@ -110,16 +110,17 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
   <lastmod>2014-04-03T16:08:24+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>-->
-<!--<url>
+<url>
   <loc>http://brilliant-minds.tk/divisions.html</loc>
   <mobile:mobile>
   <lastmod>2014-04-09T16:08:24+00:00</lastmod>
   <changefreq>Weekly</changefreq>
-</url>-->
+</url>
 <url>
-  <loc>http://brilliant-minds.tk/Powderiodic/index.html</loc>
+  <loc>http://brilliant-minds.tk/Threads.html</loc>
+  <mobile:mobile>
   <lastmod>2014-04-09T16:08:24+00:00</lastmod>
-  <changefreq>Monthly</changefreq>
+  <changefreq>Weekly</changefreq>
 </url>
 <url>
   <loc>http://brilliant-minds.tk/members.html?vusicia</loc>
