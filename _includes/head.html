@@ -1,0 +1,79 @@
+<meta charset="utf-8" />
+<title>BMN &middot; {{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- favicons -->
+<link rel="icon apple-touch-icon" type="image/png" sizes="16x16" href="img/favicon16.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="32x32" href="img/favicon32.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="48x48" href="img/favicon48.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="57x57" href="img/favicon57.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="76x76" href="img/favicon76.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="120x120" href="img/favicon120.png" />
+<link rel="icon apple-touch-icon" type="image/png" sizes="152x152" href="img/favicon152.png" />
+<!--[if IE]><link href="" rel="shortcut icon address bar" /><![endif]-->
+<link href="img/favicon.ico" rel="shortcut icon" />
+<link rel="apple-touch-icon" href="img/favicon.png" />
+    
+<!-- meta -->
+<meta name="keywords" content="the powder toy, BMN, powder toy, navy, minds, brilliant, brilliant minds of the navy, powder, game, group, mobile, tpt, bomb, members, info" />
+<meta name="description" content="Welcome to the Brilliant Minds of the Navy! This is the website for our group on The Powder Toy" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Brilliant Minds Of The Navy" />
+<meta property="og:url" content="http://brilliant-minds.tk" />
+<meta property="og:site_name" content="BMN" />
+<meta property="og:description" content="Welcome to the Brilliant Minds of the Navy! This is the website for our group on The Powder Toy" />
+<meta property="og:image" content="/img/logo.png" />
+   
+{% if page.title == "Hub" %}
+<!-- FB page -->
+<meta property="fb:page_id" content="1419535244980826" />
+<meta property="fb:admins" content="100000245737929" />
+
+<!-- Website verification -->
+<meta name="google-site-verification" content="pkxcHhS9-hHZwkGagyVdjmsiaW4W_jWIjRli9TC2z9w" />
+<meta name="msvalidate.01" content="57B77663C1E3F51F4E0EB692FABFB7DA" />
+<meta name="norton-safeweb-site-verification" content="1zrfz7v9l23ag0uytlfmb43q8moiaw9368viq57b1nhez9jgac2nwos62tsxvtrwxnrs16s0dcambqc9pn6dccx3xa6rvihswbh3-ko2llv9wldqecndvewd70cbxm0k" />
+{% endif %}
+
+<!-- Live Tile & Taskbar Pin-->
+<meta name="application-name" content="Brilliant Minds Of The Navy" />
+<meta name="msapplication-starturl" content="http://brilliant-minds.tk" />
+<meta name="msapplication-navbutton-color" content="#ebf5ff" />
+<meta name="msapplication-window" content="width=1024;height=768" />
+<meta name="msapplication-tooltip" content="Go to Brilliant Minds Of The Navy" />
+<meta name="msapplication-task" content="name=Infos;action-uri=http://brilliant-minds.tk/infos.html" />
+<meta name="msapplication-task" content="name=Rules;action-uri=http://brilliant-minds.tk/rules.html" />
+<meta name="msapplication-task" content="name=Members;action-uri=http://brilliant-minds.tk/members.html" />
+<meta name="msapplication-task" content="name=Rank System;action-uri=http://brilliant-minds.tk/ranks.html" />
+    
+{% if page.title == "Error 404" %}
+{% else %}
+<!-- flip-Ahead -->
+{% if page.previous %}
+<link rel="prev" href="{{ page.previous }}" />
+{% endif %}
+{% if page.next %}
+<link rel="next" href="{{ page.next }}" />
+{% endif %}
+{% endif %}
+
+<!-- IE7 or lower Redirect -->
+<!--[if lt IE8]><meta http-equiv="refresh" content="1;url=http://brilliant-minds.tk/IE/{{ page.html }}"><![endif]-->
+
+<!-- CSS -->
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+{% if page.title == "User Saves" or page.title == "Infos" %}
+<link href="save.css" rel="stylesheet" />
+{% endif %}
+   
+<!-- Compatibility layer for ie -->
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<script src="respond.min.js"></script>
+<![endif]-->
+
+<!-- Fix for IE mobile -->
+<script type="text/javascript">if(navigator.userAgent.match(/IEMobile\/10\.0/)){var msViewportStyle=document.createElement("style");msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));document.querySelector("head").appendChild(msViewportStyle)}</script>

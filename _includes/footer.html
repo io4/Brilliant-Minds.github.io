@@ -1,0 +1,16 @@
+<footer class="footer">
+  <a class="text-muted" href="https://github.com/Brilliant-Minds/Brilliant-Minds.github.io">repo</a>
+</footer>
+
+<!-- JavaScript -->
+<script src="bootstrap/jquery.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+{% if page.time == "Members" %}
+<script src="members.js"></script>
+{% endif %}
+{% if page.title == "User Saves" or page.title == "Infos" %}
+<script src="saveembed.js"></script>
+{% endif %}
+{% if page.title == "Divisions" %}
+<script src="divisions.js"></script>
+{% endif %}

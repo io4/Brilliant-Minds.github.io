@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% if page.title == "Hub" %}
+    <div id="fb-root"></div>
+    <script>(function(e,t,n){var r,i=e.getElementsByTagName(t)[0];if(e.getElementById(n))return;r=e.createElement(t);r.id=n;r.src="http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=605566596199439&version=v2.0";i.parentNode.insertBefore(r,i)})(document,"script","facebook-jssdk")</script>
+    {% endif %}
+    <div class="container">
+      {% include nav.html %}
+
+      <hr />
+      
+      {{ content }}
+
+      <hr />
+      
+      {% include footer.html %}
+    </div>
+</body>
+</html>

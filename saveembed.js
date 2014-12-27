@@ -29,7 +29,7 @@ function loadSaves() {
 "      <a class=\"btn btn-inverse\" href=\"ptsave:" + id + "#" + title.replace(/[,.\s]+/g, "_") + "\">Open</a>",
 "    </div>",
 "    <a href=\"http://powdertoy.co.uk/Browse/View.html?ID=" + id + "\">",
-"      <img type=\"image/png\" height=\"96\" width=\"153\" src=\"" + img + "\">",
+"      <img type=\"image/png\" height=\"96\" width=\"153\" src=\"" + img + "\" />",
 "    </a>",
 "    <div class=\"caption\">",
 "      <h6>",

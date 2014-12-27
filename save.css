@@ -73,19 +73,9 @@
 	top: 3px;
 }
 
-.savegame .overlay input.btn {
-	margin-bottom: 3px; 
-	display: block;
-	width: 147px;
-}
-
 .savegame .overlay .btn {
 	margin-bottom: 3px; 
 	display: block;
 	width: 100%;
-}
-
-.savegame form {
-	margin: 0;
 }
 
