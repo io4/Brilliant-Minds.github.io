@@ -1,2 +1,4 @@
+url: http://brilliant-minds.tk
+
 gems:
-	- jekyll-sitemap
+  - jekyll-sitemap
