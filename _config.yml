@@ -1,4 +1,5 @@
 url: http://brilliant-minds.tk
+permalink: /404.html
 
 gems:
   - jekyll-sitemap
