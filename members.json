@@ -81,7 +81,8 @@
     	["xetalim", "Seaman Apprentice"],
     	["Xoner", "Seaman Apprentice"],
     	["YouCantHandleTheWojo", "Seaman Apprentice"]],
-    "probationary": [["NUCLEAR_FOX", "Probationary"]],
+    "probationary": [["NUCLEAR_FOX", "Probationary"],
+    ["Darthan", "Probationary"]],
     "resigned": ["BigPig", "billion57", "PowderTech1350", "vusicia"],
     "banned": ["CatAnimation", "Goodiesohhi", "Darthanihlus"]
 }
