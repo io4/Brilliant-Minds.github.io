@@ -194,7 +194,7 @@ function createRecord(name) {
             else if (e.safe == 2)
                 status += "(This member is absolutely necessary to keep the group going and thus is autosafe";
         }
-        if (status !=== "")
+        if (status !== "")
             $("<small class=\"text-muted\">" + status + ")</small>").appendTo("#content");
 
         // Prepend the back link
