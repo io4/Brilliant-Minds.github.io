@@ -3,7 +3,7 @@
 
 function loadSaves() {
     $.each($("save"), function() {
-        $this = $(this);
+        var $this = $(this);
         var id = $this.attr("data-id");
         var author = $this.attr("data-author");
         var title = $this.attr("data-title");
@@ -16,9 +16,9 @@ function loadSaves() {
             stitle = title;
         
         if (title == "BMN LOGO IMPROVED IMPROVED")
-            stitle = title.substring(0, 19) + "..."
+            stitle = title.substring(0, 19) + "...";
 
-        if (img == undefined)
+        if (img === undefined)
             img = "http://static.powdertoy.co.uk/" + id + "_small.png";
         
         var html = $(
@@ -45,7 +45,7 @@ function loadSaves() {
 
 $(loadSaves);
 $(document).bind("ready", function(){
-  SaveElement = $(".savegame");
+  var SaveElement = $(".savegame");
 
   SaveElement.on("mouseover", function () {
     $(this).find(".overlay").animate({ opacity: 1, top: "3px" }, 150);
