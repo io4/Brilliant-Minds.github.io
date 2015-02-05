@@ -158,11 +158,13 @@ function createRecord(name) {
         $("<i>" + e.rank_comment + "</i>").appendTo("#content");
 
         // Put awards into a table and sort it by rank
-        sortable = [];
+        var sortable = [];
+
         for (var i in e.awards)
             sortable.push([i, e.awards[i]]);
         sortable.sort(function(a, b) {return b[1] - a[1];});
 
+        i = 0;
         // Award box
         var box = $("<div class=\"award-box\"></div>");
         for (i = 0;i < sortable.length; i++) {
@@ -202,10 +204,73 @@ function createRecord(name) {
         $("<a href=\"members.html\">< Back</a><br>").prependTo("#content");
     });
 
-    resp.error(function(e) {
+    resp.error(function() {
         // Prepend an error message
-        $("<a href=\"members.html\">< Back</a>").prependTo("#content");
-        $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a member page for "+ name + " :(</div>").appendTo("#content");
+        var resp = jQuery.getJSON("members.json");
+        resp.done(function(e) {
+            var i = 0;
+            for (i < e.officers.length; i++;) {
+                if (e.officers[i][0] == name) {
+                    foundbutnorecord( e.officers[i][1]);
+                }
+            }
+            for (i < e.enlisted.length; i++;) {
+                if (e.enlisted[i][0] == name) {
+                    foundbutnorecord( e.enlisted[i][1]);
+                }
+            }
+            for (i < e.preofficers.length; i++;) {
+                if (e.preofficers[i][0] == name) {
+                    foundbutnorecord( e.preofficers[i][1]);
+                }
+            }
+            for (i < e.probationary.length; i++;) {
+                if (e.probationary[i][0] == name) {
+                    foundbutnorecord( e.probationary[i][0]);
+                }
+            }
+            for (i < e.resigned.length; i++;) {
+                if (e.resigned[i][0] == name) {
+                    foundbutnorecord( e.resigned[i][0]);
+                }
+            }
+            for (i < e.banned.length; i++;) {
+                if (e.banned[i][0] == name) {
+                    foundbutnorecord( e.banned[i][1]);
+                }
+            }
+            var foundbutnorecord = function(rank) {
+                // Avatar
+                var avatar = $("<img class=\"member-avatar\" style=\"border-radius:3px;position:relative;z-index:-1;\"></img>").appendTo("#content");
+                // fetch the image URL from the powdertoythings.co.uk API wrapper
+                var resp = jQuery.getJSON("http://powdertoythings.co.uk/Powder/User.json?Name=" + encodeURIComponent(name));
+                resp.done(function(e) {
+                    var src = e.User.Avatar;
+                    // check if it's hosted on gravatar or powdertoy.co.uk
+                    if (src.substring(0, 4) != "http") {
+                        src = "http://powdertoy.co.uk" + src;
+                    }
+                    avatar[0].src = src;
+
+                    // remove the element if no avatar was found
+                    avatar[0].onerror = function() {
+                        avatar.remove();
+                    };
+                });
+
+                // Title
+                var title = $("<h4>" + name + " </h4>");
+                createRankBadge(rank).appendTo(title);
+                title.appendTo("#content");
+
+            };
+        });
+
+        resp.error(function() {
+            // Prepend an error message
+            $("<a href=\"members.html\">< Back</a>").prependTo("#content");
+            $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a member page for " + name + " ," + name + "is not a member of BMN :(</div>").appendTo("#content");
+        });
     });
 }
 
