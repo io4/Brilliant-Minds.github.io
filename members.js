@@ -210,7 +210,7 @@ function createRecord(name) {
 
     resp.error(function() {
         // Prepend an error message
-        var resp = jQuery.getJSON("members.json");
+        /*var resp = jQuery.getJSON("members.json");
         resp.done(function(e) {
             var i = 0;
             for (i < e.officers.length; i++;) {
@@ -270,11 +270,11 @@ function createRecord(name) {
             };
         });
 
-        resp.error(function() {
+        resp.error(function() {*/
             // Prepend an error message
             $("<a href=\"members.html\">< Back</a>").prependTo("#content");
-            $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a member page for " + name + " ," + name + "is not a member of BMN :(</div>").appendTo("#content");
-        });
+            $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a member page for " + name + " :(</div>").appendTo("#content");
+       // });
     });
 }
 
