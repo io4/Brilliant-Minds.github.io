@@ -131,7 +131,6 @@ function createList() {
 
 function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
-    var i = 0;
     resp.done(function(e) {
         // Avatar
         var avatar = $("<img class=\"member-avatar\" style=\"border-radius:3px;position:relative;z-index:-1;\"></img>").appendTo("#content");
@@ -158,10 +157,11 @@ function createRecord(name) {
 
         // Put awards into a table and sort it by rank
         var sortable = [];
-        for (i in e.awards)
+        for (var i in e.awards)
             sortable.push([i, e.awards[i]]);
         sortable.sort(function(a, b) {return b[1] - a[1];});
 
+        i = 0;
         // Award box
         var box = $("<div class=\"award-box\"></div>");
         for (i < sortable.length; i++;) {
