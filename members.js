@@ -58,17 +58,16 @@ function createList() {
     var resp = jQuery.getJSON("members.json");
     // Set content to be fluid
     $("#content").addClass("row");
-    var i;
 
     resp.done(function(e) {
         // Global variables for the "boxes"
-        var li = $("<li></li>");
-        var i;
+        var li, i;
 
         var offbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Officers (" + e.officers.length + ")</h4>").appendTo(offbox);
         var officers = $("<ul></ul>");
         for (i = 0;i < e.officers.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.officers[i][0]) + "\">" + e.officers[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.officers[i][1]).appendTo(li);
             li.appendTo(officers);
@@ -79,6 +78,7 @@ function createList() {
         $("<h4>Enlisted (" + e.enlisted.length + ")</h4>").appendTo(offbox);
         var enlisted = $("<ul></ul>");
         for (i = 0;i < e.enlisted.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.enlisted[i][0]) + "\">" + e.enlisted[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.enlisted[i][1]).appendTo(li);
             li.appendTo(enlisted);
@@ -89,6 +89,7 @@ function createList() {
         $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
         var preofficers = $("<ul></ul>");
         for (i = 0;i < e.preofficers.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.preofficers[i][0]) + "\">" + e.preofficers[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.preofficers[i][1]).appendTo(li);
             li.appendTo(preofficers);
@@ -99,6 +100,7 @@ function createList() {
         $("<h4>Resigned (" + e.resigned.length + ")</h4>").appendTo(offbox);
         var resigned = $("<ul></ul>");
         for (i = 0;i < e.resigned.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.resigned[i]) + "\">" + e.resigned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(resigned);
         }
@@ -107,6 +109,7 @@ function createList() {
         $("<h4>Banned (" + e.banned.length + ")</h4>").appendTo(offbox);
         var banned = $("<ul></ul>");
         for (i = 0;i < e.banned.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.banned[i]) + "\">" + e.banned[i] + "</a><span> </span>").appendTo(li);
             li.appendTo(banned);
         }
@@ -116,6 +119,7 @@ function createList() {
         $("<h4>Probationary (" + e.probationary.length + ")</h4>").appendTo(offbox);
         var probationary = $("<ul></ul>");
         for (i = 0;i < e.probationary.length; i++) {
+            li = $("<li></li>");
             $("<a href=\"members.html?" + encodeURIComponent(e.probationary[i][0]) + "\">" + e.probationary[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.probationary[i][1]).appendTo(li);
             li.appendTo(probationary);
