@@ -36,12 +36,12 @@ function createList() {
     resp.done(function(e) {
         // Global variables for the "boxes"
         var li = $("<li></li>");
-        var i = 0;
+        var i;
 
         var securitybox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Security (" + e.bmnsd.length + ")</h4>").appendTo(securitybox);
         var bmnsd = $("<ul></ul>");
-        for (i < e.bmnsd.length; i++;) {
+        for (i = 0;i < e.bmnsd.length; i++) {
             $("<a href=\"members.html?" + encodeURIComponent(e.bmnsd[i][0]) + "\">" + e.bmnsd[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.bmnsd[i][1]).appendTo(li);
             li.appendTo(bmnsd);
@@ -52,7 +52,7 @@ function createList() {
         var technicalbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Technical (" + e.bmntd.length + ")</h4>").appendTo(technicalbox);
         var bmntd = $("<ul></ul>");
-        for (i < e.bmntd.length; i++;) {
+        for (i = 0;i < e.bmntd.length; i++) {
             $("<a href=\"members.html?" + encodeURIComponent(e.bmntd[i][0]) + "\">" + e.bmntd[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.bmntd[i][1]).appendTo(li);
             li.appendTo(bmntd);
@@ -62,7 +62,7 @@ function createList() {
 
         $("<h4>Public Relations (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
         var bmnprd = $("<ul></ul>");
-        for (i < e.bmnprd.length; i++;) {
+        for (i = 0;i < e.bmnprd.length; i++) {
             $("<a href=\"members.html?" + encodeURIComponent(e.bmnprd[i][0]) + "\">" + e.bmnprd[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.bmnprd[i][1]).appendTo(li);
             li.appendTo(bmnprd);
@@ -71,7 +71,7 @@ function createList() {
 
         $("<h4>Records (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
         var bmnrd = $("<ul></ul>");
-        for (i < e.bmnrd.length; i++;) {
+        for (i = 0;i < e.bmnrd.length; i++) {
             $("<a href=\"members.html?" + encodeURIComponent(e.bmnrd[i][0]) + "\">" + e.bmnrd[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.bmnrd[i][1]).appendTo(li);
             li.appendTo(bmnrd);
@@ -81,7 +81,7 @@ function createList() {
 
         $("<h4>Research and Development (" + e.bmnrdd.length + ")</h4>").appendTo(securitybox);
         var bmnrdd = $("<ul></ul>");
-        for (i < e.bmnrdd.length; i++;) {
+        for (i = 0;i < e.bmnrdd.length; i++) {
             $("<a href=\"members.html?" + encodeURIComponent(e.bmnrdd[i][0]) + "\">" + e.bmnrdd[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.bmnrdd[i][1]).appendTo(li);
             li.appendTo(bmnrdd);
