@@ -1,0 +1,12 @@
+{
+"links": {},
+    // These links are displayed beneath the "Forum Profile" link.
+    // Example: "links": {"Website": "http://asdf.com",
+    //                    "Facebook": "http://facebook.com/asdf"}
+
+    "page": "There were no page created for this division yet."
+    // And this is the main part. It's normal HTML and will be inserted into the
+    // page directly.
+    // ==> Remember that a normal newline here would break the JSON file, use
+    //     <br> instead.
+}
