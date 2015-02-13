@@ -2,8 +2,8 @@ function load() {
     var s = document.location.search.substring(1);
     if (s === "")
         createList();
-/*    else
-        createPage(s);*/
+    else
+        createPage(s);
 }
 
 function createRankBadge(rank) {
@@ -38,7 +38,7 @@ function createList() {
         var li, i;
 
         var securitybox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Security (" + e.bmnsd.length + ")</h4>").appendTo(securitybox);
+        $("<h4><a href=\"divisions.html?\">Security</a> (" + e.bmnsd.length + ")</h4>").appendTo(securitybox);
         var bmnsd = $("<ul></ul>");
         for (i = 0;i < e.bmnsd.length; i++) {
             li = $("<li></li>");
@@ -50,7 +50,7 @@ function createList() {
         securitybox.appendTo("#content");
 
         var technicalbox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Technical (" + e.bmntd.length + ")</h4>").appendTo(technicalbox);
+        $("<h4><a href=\"divisions.html?\">Technical</a> (" + e.bmntd.length + ")</h4>").appendTo(technicalbox);
         var bmntd = $("<ul></ul>");
         for (i = 0;i < e.bmntd.length; i++) {
             li = $("<li></li>");
@@ -61,7 +61,7 @@ function createList() {
         bmntd.appendTo(technicalbox);
         technicalbox.appendTo("#content");
 
-        $("<h4>Public Relations (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
+        $("<h4><a href=\"divisions.html?\">Public Relations</a> (" + e.bmnprd.length + ")</h4>").appendTo(securitybox);
         var bmnprd = $("<ul></ul>");
         for (i = 0;i < e.bmnprd.length; i++) {
             li = $("<li></li>");
@@ -71,7 +71,7 @@ function createList() {
         }
         bmnprd.appendTo(securitybox);
 
-        $("<h4>Records (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
+        $("<h4><a href=\"divisions.html?\">Records</a> (" + e.bmnrd.length + ")</h4>").appendTo(technicalbox);
         var bmnrd = $("<ul></ul>");
         for (i = 0;i < e.bmnrd.length; i++) {
             li = $("<li></li>");
@@ -82,7 +82,7 @@ function createList() {
         bmnrd.appendTo(technicalbox);
 
 
-        $("<h4>Research and Development (" + e.bmnrdd.length + ")</h4>").appendTo(securitybox);
+        $("<h4><a href=\"divisions.html?\">Research and Development</a> (" + e.bmnrdd.length + ")</h4></a>").appendTo(securitybox);
         var bmnrdd = $("<ul></ul>");
         for (i = 0;i < e.bmnrdd.length; i++) {
             li = $("<li></li>");
@@ -97,13 +97,13 @@ function createList() {
     });
 }
 
-/*function createPage(name) {
+function createPage(name) {
     var resp = jQuery.getJSON("divisions/" + name + ".json");
-
+    resp.done(function(e)){
         // Title
         var title = $("<h4>" + name + " </h4>");
+        title.appendTo("#content");
         // Links
-        $("<br><a class=\"text-muted\" href=\"http://powdertoy.co.uk/User.html?Name=" + encodeURIComponent(name) + "\">Forum Profile</a>").appendTo("#content");
         for (var i in e.links) {
             $("<span class=\"text-muted\">&nbsp;&middot;&nbsp;</span><a class=\"text-muted\" href=\"" + e.links[i] + "\">" + i + "</a>").appendTo("#content");
         }
@@ -112,14 +112,13 @@ function createList() {
 
         // Prepend the back link
         $("<a href=\"divisions.html\">< Back</a><br>").prependTo("#content");
-    };
+    });
 
     resp.error(function(e) {
         // Prepend an error message
         $("<a href=\"divisions.html\">< Back</a>").prependTo("#content");
-        $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a division page for "
-            + name + " :(</div>").appendTo("#content");
+        $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a division page for " + name + " :(</div>").appendTo("#content");
     });
-}*/
+}
 
 $(load);
