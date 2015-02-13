@@ -114,7 +114,7 @@ function createPage(name) {
         $("<a href=\"divisions.html\">< Back</a><br>").prependTo("#content");
     });
 
-    resp.error(function(e) {
+    resp.error(function() {
         // Prepend an error message
         $("<a href=\"divisions.html\">< Back</a>").prependTo("#content");
         $("<div class=\"alert alert-danger\"><strong>Sorry,</strong> I couldn't find a division page for " + name + " :(</div>").appendTo("#content");
