@@ -1,6 +1,6 @@
 function load() {
-    var s = document.location.search.substring(1);
-    if (s === "")
+    /*var s = document.location.search.substring(1);
+    if (s === "")*/
         createList();
 /*    else
         createPage(s);*/
