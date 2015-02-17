@@ -6,12 +6,11 @@ ISSUE REPORTING:
 ----------------
 **Please report only one bug, suggestion or pull request per issue,**
 
-BUGREPORT:
+BUG REPORT/ISSUES:
 ----------
 Please answer the questions below when you want to report a bug. A bug could
-be for example a graphical glitch or unexpected behavior. Please
-copy the questions below to your issue and answer them when you want to report
-a bug:
+be for example an image that's not loading, a broken link or unexpected behavior. 
+Please copy the questions below to your issue and answer them when you want to report a bug:
 
 Where did the issue happen (URL) ?
 
