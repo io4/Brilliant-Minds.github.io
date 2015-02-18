@@ -1,15 +1,15 @@
 {
     "updated": "2014-10-03",
-    "moderators": [["PyroDude", "Don"],
+    "officers": [["PyroDude", "Don"],
     	["Dom2Mom", "Under Boss"],
     	["Protcom", "Under Boss"],
     	["HittlerSucks", "Under Boss"],
     	["TheGammersGroup", "Consigliere"],
-    	    "members": [["IAmDumb", "Soldier Leader"],
+    	    "preofficers": [["IAmDumb", "Soldier Leader"],
     	["Hosj", "Soldier Leader"],
     	["Io", "Soldier Leader"]
      ],
-    "noobs": [["BrickBuiltStudios", "Associate"]],
+    "enlisted": [["BrickBuiltStudios", "Associate"]],
  }
 
 
