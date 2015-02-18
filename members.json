@@ -1,15 +1,45 @@
 {
     "updated": "2014-10-03",
-    "officers": [["PyroDude", "Don"],
-    	["Dom2Mom", "Under Boss"],
-    	["Protcom", "Under Boss"],
-    	["HittlerSucks", "Under Boss"],
-    	["TheGammersGroup", "Consigliere"],
-    	    "preofficers": [["IAmDumb", "Soldier Leader"],
-    	["Hosj", "Soldier Leader"],
-    	["Io", "Soldier Leader"]
-     ],
-    "enlisted": [["BrickBuiltStudios", "Associate"]]
- }
-
-
+    "officers": [
+        [
+            "PyroDude",
+            "Don"
+        ],
+        [
+            "Dom2Mom",
+            "Under Boss"
+        ],
+        [
+            "Protcom",
+            "Under Boss"
+        ],
+        [
+            "HittlerSucks",
+            "Under Boss"
+        ],
+        [
+            "TheGammersGroup",
+            "Consigliere"
+        ],
+        "preofficers": [
+            [
+                "IAmDumb",
+                "Soldier Leader"
+            ],
+            [
+                "Hosj",
+                "Soldier Leader"
+            ],
+            [
+                "Io",
+                "Soldier Leader"
+            ]
+        ]
+    ],
+    "enlisted": [
+        [
+            "BrickBuiltStudios",
+            "Associate"
+        ]
+    ]
+}
