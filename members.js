@@ -1,4 +1,4 @@
-function load() {
+function load(){
     var s = document.location.search.substring(1);
     if (s === ""){
         createList();
