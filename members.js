@@ -1,9 +1,10 @@
 function load() {
     var s = document.location.search.substring(1);
-    if (s === "")
+    if (s === ""){
         createList();
-    else
+    } else {
         createRecord(s);
+    }
 }
 
 function createRankBadge(rank) {
