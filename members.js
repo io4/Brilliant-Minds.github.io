@@ -90,7 +90,7 @@ function createList() {
             li.appendTo(noobs);
         }
         preofficers.appendTo(preoffbox);
-
+});
 function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
     var i;
