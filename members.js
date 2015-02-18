@@ -8,24 +8,18 @@ function load() {
 
 function createRankBadge(rank) {
     var cl = "";
-    if (rank.indexOf("Fleet Admiral") != -1)
+    if (rank.indexOf("Don") != -1)
         cl = "badge-diamond";
-    else if (rank.indexOf("Admiral") != -1)
+    else if (rank.indexOf("Under Boss") != -1)
         cl = "badge-warning";
-    else if (rank.indexOf("Captain") != -1)
+    else if (rank.indexOf("Consigliere") != -1)
         cl = "badge-silver";
-    else if (rank.indexOf("Commander") != -1)
+    else if (rank.indexOf("Soilder Leader") != -1)
         cl = "badge-bronze";
-    else if (rank.indexOf("Lieutenant") != -1 || rank.indexOf("Ensign") != -1)
+    else if (rank.indexOf("Soilder") != -1 || rank.indexOf("Ensign") != -1)
         cl = "badge-inverse";
-    else if (rank.indexOf("Candidate") != -1)
+    else if (rank.indexOf("Associate") != -1)
         cl = "label-success";
-    else if (rank.indexOf("Probationary") != -1)
-        cl = "label-danger";
-    else if (rank.indexOf("Chief") != -1 || rank.indexOf("Petty") != -1)
-        cl = "label-primary";
-    else if (rank.indexOf("Warrant") != -1)
-        cl = "label-info";
     else
         cl = "label-default";
 
