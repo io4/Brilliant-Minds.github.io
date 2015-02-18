@@ -17,7 +17,7 @@ function createRankBadge(rank) {
         cl = "badge-silver";
     else if (rank.indexOf("Soilder Leader") != -1)
         cl = "badge-bronze";
-    else if (rank.indexOf("Soilder") != -1 || rank.indexOf("Ensign") != -1)
+    else if (rank.indexOf("Soilder") != -1)
         cl = "badge-inverse";
     else if (rank.indexOf("Associate") != -1)
         cl = "label-success";
@@ -70,7 +70,7 @@ function createList() {
         moderators.appendTo(offbox);
         offbox.appendTo("#content");
         
-        $("<h4>Enlisted (" + e.members.length + ")</h4>").appendTo(offbox);
+        $("<h4>Members (" + e.members.length + ")</h4>").appendTo(offbox);
         var members = $("<ul></ul>");
         for (i = 0;i < e.members.length; i++) {
             li = $("<li></li>");
@@ -81,7 +81,7 @@ function createList() {
         members.appendTo(offbox);
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Preofficers (" + e.noobs.length + ")</h4>").appendTo(preoffbox);
+        $("<h4>Noobs (" + e.noobs.length + ")</h4>").appendTo(preoffbox);
         var noobs = $("<ul></ul>");
         for (i = 0;i < e.noobs.length; i++) {
             li = $("<li></li>");
