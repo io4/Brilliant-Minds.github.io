@@ -67,7 +67,7 @@ function createList() {
             createRankBadge(e.moderators[i][1]).appendTo(li);
             li.appendTo(moderators);
         }
-        officers.appendTo(offbox);
+        moderators.appendTo(offbox);
         offbox.appendTo("#content");
         
         $("<h4>Enlisted (" + e.members.length + ")</h4>").appendTo(offbox);
@@ -78,7 +78,7 @@ function createList() {
             createRankBadge(e.members[i][1]).appendTo(li);
             li.appendTo(members);
         }
-        enlisted.appendTo(offbox);
+        members.appendTo(offbox);
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
         $("<h4>Preofficers (" + e.noobs.length + ")</h4>").appendTo(preoffbox);
@@ -89,8 +89,8 @@ function createList() {
             createRankBadge(e.noobs[i][1]).appendTo(li);
             li.appendTo(noobs);
         }
-        preofficers.appendTo(preoffbox);
-});
+        noobs.appendTo(preoffbox);
+});}
 function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
     var i;
@@ -211,7 +211,6 @@ function createRecord(name) {
 
             };
         });
-
         resp.error(function() {*/
             // Prepend an error message
             $("<a href=\"members.html\">< Back</a>").prependTo("#content");
