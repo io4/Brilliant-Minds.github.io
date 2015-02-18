@@ -20,20 +20,20 @@
         [
             "TheGammersGroup",
             "Consigliere"
+        ]
+    ],
+    "preofficers": [
+        [
+            "IAmDumb",
+            "Soldier Leader"
         ],
-        "preofficers": [
-            [
-                "IAmDumb",
-                "Soldier Leader"
-            ],
-            [
-                "Hosj",
-                "Soldier Leader"
-            ],
-            [
-                "Io",
-                "Soldier Leader"
-            ]
+        [
+            "Hosj",
+            "Soldier Leader"
+        ],
+        [
+            "Io",
+            "Soldier Leader"
         ]
     ],
     "enlisted": [
