@@ -1,9 +1,10 @@
-function load() {
+function load(){
     var s = document.location.search.substring(1);
-    if (s === "")
+    if (s === ""){
         createList();
-    else
+    } else {
         createRecord(s);
+    }
 }
 
 function createRankBadge(rank) {
@@ -16,7 +17,7 @@ function createRankBadge(rank) {
         cl = "badge-silver";
     else if (rank.indexOf("Soilder Leader") != -1)
         cl = "badge-bronze";
-    else if (rank.indexOf("Soilder") != -1)
+    else if (rank.indexOf("Soilder") != -1 || rank.indexOf("Ensign") != -1)
         cl = "badge-inverse";
     else if (rank.indexOf("Associate") != -1)
         cl = "label-success";
@@ -58,47 +59,38 @@ function createList() {
         var li, i;
 
         var offbox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Officers (" + e.officers.length + ")</h4>").appendTo(offbox);
-        var officers = $("<ul></ul>");
-        for (i = 0;i < e.officers.length; i++) {
+        $("<h4>Moderators (" + e.moderators.length + ")</h4>").appendTo(offbox);
+        var moderators = $("<ul></ul>");
+        for (i = 0;i < e.moderators.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.officers[i][0]) + "\">" + e.officers[i][0] + "</a><span> </span>").appendTo(li);
-            createRankBadge(e.officers[i][1]).appendTo(li);
-            li.appendTo(officers);
+            $("<a href=\"members.html?" + encodeURIComponent(e.moderators[i][0]) + "\">" + e.moderators[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.moderators[i][1]).appendTo(li);
+            li.appendTo(moderators);
         }
-        officers.appendTo(offbox);
+        moderators.appendTo(offbox);
         offbox.appendTo("#content");
         
-        $("<h4>Enlisted (" + e.enlisted.length + ")</h4>").appendTo(offbox);
-        var enlisted = $("<ul></ul>");
-        for (i = 0;i < e.enlisted.length; i++) {
+        $("<h4>Enlisted (" + e.members.length + ")</h4>").appendTo(offbox);
+        var members = $("<ul></ul>");
+        for (i = 0;i < e.members.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.enlisted[i][0]) + "\">" + e.enlisted[i][0] + "</a><span> </span>").appendTo(li);
-            createRankBadge(e.enlisted[i][1]).appendTo(li);
-            li.appendTo(enlisted);
+            $("<a href=\"members.html?" + encodeURIComponent(e.members[i][0]) + "\">" + e.members[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.members[i][1]).appendTo(li);
+            li.appendTo(members);
         }
-        enlisted.appendTo(offbox);
+        members.appendTo(offbox);
 
         var preoffbox = $("<div class=\"col-md-6\"></div>");
-        $("<h4>Preofficers (" + e.preofficers.length + ")</h4>").appendTo(preoffbox);
-        var preofficers = $("<ul></ul>");
-        for (i = 0;i < e.preofficers.length; i++) {
+        $("<h4>Preofficers (" + e.noobs.length + ")</h4>").appendTo(preoffbox);
+        var noobs = $("<ul></ul>");
+        for (i = 0;i < e.noobs.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.preofficers[i][0]) + "\">" + e.preofficers[i][0] + "</a><span> </span>").appendTo(li);
-            createRankBadge(e.preofficers[i][1]).appendTo(li);
-            li.appendTo(preofficers);
+            $("<a href=\"members.html?" + encodeURIComponent(e.noobs[i][0]) + "\">" + e.noobs[i][0] + "</a><span> </span>").appendTo(li);
+            createRankBadge(e.noobs[i][1]).appendTo(li);
+            li.appendTo(noobs);
         }
-        preofficers.appendTo(preoffbox);
-
-
-        // Add the date of the last update and a count of active members
-        $("<small class=\"text-muted\">Active members: " + (e.officers.length + e.preofficers.length + e.enlisted.length) + "</small><br\>").appendTo(offbox);
-        $("<small class=\"text-muted\">Last updated: " + e.updated + "</small>").appendTo(offbox);
-
-        preoffbox.appendTo("#content");
-    });
-}
-
+        noobs.appendTo(preoffbox);
+});}
 function createRecord(name) {
     var resp = jQuery.getJSON("members/" + name + ".json");
     var i;
@@ -178,37 +170,22 @@ function createRecord(name) {
         /*var resp = jQuery.getJSON("members.json");
         resp.done(function(e) {
             var i = 0;
-            for (i < e.officers.length; i++;) {
+            for (i < e.moderators.length; i++;) {
                 if (e.officers[i][0] == name) {
-                    foundbutnorecord( e.officers[i][1]);
+                    foundbutnorecord( e.moderators[i][1]);
                 }
             }
-            for (i < e.enlisted.length; i++;) {
+            for (i < e.members.length; i++;) {
                 if (e.enlisted[i][0] == name) {
-                    foundbutnorecord( e.enlisted[i][1]);
+                    foundbutnorecord( e.members[i][1]);
                 }
             }
-            for (i < e.preofficers.length; i++;) {
-                if (e.preofficers[i][0] == name) {
+            for (i < e.noobs.length; i++;) {
+                if (e.noobs[i][0] == name) {
                     foundbutnorecord( e.preofficers[i][1]);
                 }
             }
-            for (i < e.probationary.length; i++;) {
-                if (e.probationary[i][0] == name) {
-                    foundbutnorecord( e.probationary[i][0]);
-                }
-            }
-            for (i < e.resigned.length; i++;) {
-                if (e.resigned[i][0] == name) {
-                    foundbutnorecord( e.resigned[i][0]);
-                }
-            }
-            for (i < e.banned.length; i++;) {
-                if (e.banned[i][0] == name) {
-                    foundbutnorecord( e.banned[i][1]);
-                }
-            }
-            var foundbutnorecord = function(rank) {
+                       var foundbutnorecord = function(rank) {
                 // Avatar
                 var avatar = $("<img class=\"member-avatar\" style=\"border-radius:3px;position:relative;z-index:-1;\"></img>").appendTo("#content");
                 // fetch the image URL from the powdertoythings.co.uk API wrapper
