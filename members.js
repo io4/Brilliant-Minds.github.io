@@ -63,7 +63,7 @@ function createList() {
         var moderators = $("<ul></ul>");
         for (i = 0;i < e.moderators.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.officers[i][0]) + "\">" + e.moderators[i][0] + "</a><span> </span>").appendTo(li);
+            $("<a href=\"members.html?" + encodeURIComponent(e.moderators[i][0]) + "\">" + e.moderators[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.moderators[i][1]).appendTo(li);
             li.appendTo(moderators);
         }
@@ -74,7 +74,7 @@ function createList() {
         var members = $("<ul></ul>");
         for (i = 0;i < e.members.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.enlisted[i][0]) + "\">" + e.members[i][0] + "</a><span> </span>").appendTo(li);
+            $("<a href=\"members.html?" + encodeURIComponent(e.members[i][0]) + "\">" + e.members[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.members[i][1]).appendTo(li);
             li.appendTo(members);
         }
@@ -85,7 +85,7 @@ function createList() {
         var noobs = $("<ul></ul>");
         for (i = 0;i < e.noobs.length; i++) {
             li = $("<li></li>");
-            $("<a href=\"members.html?" + encodeURIComponent(e.preofficers[i][0]) + "\">" + e.noobs[i][0] + "</a><span> </span>").appendTo(li);
+            $("<a href=\"members.html?" + encodeURIComponent(e.noobs[i][0]) + "\">" + e.noobs[i][0] + "</a><span> </span>").appendTo(li);
             createRankBadge(e.noobs[i][1]).appendTo(li);
             li.appendTo(noobs);
         }
